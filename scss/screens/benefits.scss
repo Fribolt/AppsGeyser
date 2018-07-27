@@ -1,0 +1,49 @@
+.benefits {
+  text-align: center;
+
+  .title {
+    margin-top: 20px;
+    margin-bottom: 100px;
+  }
+
+  .subtitle {
+    margin-bottom: 14px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .icon {
+    width: 51px;
+    height: 51px;
+    margin: 0 auto;
+    background: no-repeat center bottom;
+
+    &-lightning {
+      background-image: url("../images/lightning.svg");
+    }
+    &-book {
+      background-image: url("../images/book.svg");
+    }
+    &-clock {
+      background-image: url("../images/clock.svg");
+    }
+    &-benefits-star {
+      background-image: url("../images/benefits-star.png");
+      background-size: 100%;
+    }
+    &-phone {
+      background-image: url("../images/phone.svg");
+    }
+    &-hand {
+      background-image: url("../images/hand.svg");
+    }
+  }
+
+  &-item {
+    margin-bottom: 80px;
+  }
+
+
+}

@@ -1,0 +1,47 @@
+.btn {
+  background-color: $color-button;
+  box-shadow: 0 10px 20px 0 rgba(96, 165, 16, 0.42);
+
+  &:focus {
+    box-shadow: 0 10px 20px 0 rgba(96, 165, 16, 0.42);
+  }
+
+  &-language,
+  &-login {
+    box-shadow: none;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  &-language {
+    border: solid 1px #eeebeb;
+    font-weight: 700;
+    background-color: #fafafa;
+  }
+
+  &-login {
+    position: relative;
+    padding: 0;
+    background-color: #fff;
+
+    .icon {
+      display: inline-block;
+      position: absolute;
+      width: 25px;
+      height: 20px;
+      margin-left: 5px;
+      background: url(../images/login.svg) center no-repeat;
+      background-size: 100%;
+    }
+  }
+
+  &-create-app {
+    padding: 17px 23px 17px 22px;
+    font-weight: 900;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+}
