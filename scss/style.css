@@ -1,6 +1,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  color: #35344c; }
+  color: #35344c;
+  background-color: #fafafa; }
 
 .relative {
   position: relative; }
@@ -95,9 +96,43 @@ a:hover {
       font-weight: 500;
       text-transform: capitalize; }
 
+.footer a {
+  color: #35344c; }
+  .footer a:hover {
+    color: #99cc33; }
+.footer .footer-navigation {
+  display: flex;
+  padding: 80px 0 40px 0;
+  font-size: 14px;
+  background-color: #fff;
+  box-shadow: 0 -1px 0 0 rgba(228, 228, 228, 0.5); }
+  .footer .footer-navigation .navigation-item {
+    display: flex;
+    flex-direction: column; }
+    .footer .footer-navigation .navigation-item h4 {
+      margin-bottom: 30px;
+      font-weight: 800;
+      font-size: 12px;
+      text-transform: uppercase; }
+    .footer .footer-navigation .navigation-item a {
+      margin-bottom: 24px;
+      font-weight: 600; }
+.footer .policy-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px; }
+  .footer .policy-navigation a {
+    margin: 0 50px; }
+.footer .copyrighting {
+  margin: 30px 0;
+  text-align: center;
+  color: #35344c; }
+
 .banner {
   height: 100vh;
-  padding-top: 78px; }
+  padding-top: 78px;
+  overflow: hidden; }
   .banner .title {
     margin-top: 162px;
     text-align: left;
@@ -346,7 +381,7 @@ a:hover {
           pointer-events: none; }
 
 .about-platform {
-  margin-top: 120px;
+  margin-top: 100px;
   text-align: center; }
   .about-platform .title {
     margin-bottom: 20px; }
@@ -354,7 +389,46 @@ a:hover {
     width: 100%;
     height: 522px;
     background: url("../images/map.png") center no-repeat;
-    background-size: 100%;
-    opacity: 0.5; }
+    background-size: 100%; }
+  .about-platform .calculate {
+    display: flex;
+    padding: 24px 0 30px 0;
+    box-shadow: 0 0 10px 0 rgba(230, 230, 230, 0.5); }
+    .about-platform .calculate-item {
+      flex: 1; }
+      .about-platform .calculate-item p {
+        margin: 0; }
+      .about-platform .calculate-item p.title {
+        margin-bottom: 6px;
+        font-size: 40px;
+        font-weight: 700; }
+      .about-platform .calculate-item p.subtitle {
+        font-size: 18px;
+        color: #99cc33; }
+
+.range-goods {
+  margin-top: 120px;
+  text-align: center; }
+  .range-goods .title {
+    margin-bottom: 20px;
+    font-weight: 500; }
+  .range-goods .subtitle {
+    margin-bottom: 80px;
+    font-weight: 300; }
+  .range-goods .calculate {
+    display: flex;
+    padding: 24px 0 30px 0;
+    box-shadow: 0 0 10px 0 rgba(230, 230, 230, 0.5); }
+    .range-goods .calculate-item {
+      flex: 1; }
+      .range-goods .calculate-item p {
+        margin: 0; }
+      .range-goods .calculate-item p.title {
+        margin-bottom: 6px;
+        font-size: 40px;
+        font-weight: 700; }
+      .range-goods .calculate-item p.subtitle {
+        font-size: 18px;
+        color: #99cc33; }
 
 /*# sourceMappingURL=style.css.map */

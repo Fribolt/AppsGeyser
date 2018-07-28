@@ -1,6 +1,7 @@
 .banner {
   height: 100vh;
   padding-top: #{$header-height};
+  overflow: hidden;
 
   .title {
     margin-top: 162px;
