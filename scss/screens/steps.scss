@@ -5,6 +5,7 @@
 
   &-item {
     padding: 60px 33px 0;
+    margin-bottom: 60px;
 
     .icon {
       width: 126px;
@@ -44,9 +45,21 @@
         }
       }
     }
+  }
 
-    .btn-create-app {
-      margin-top: 200px;
+  .counter {
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 200px;
+
+    &-title {
+      margin-top: 185px;
+      margin-bottom: 50px;
+      font-weight: 500;
+      line-height: 1.45;
+      font-size: 22px;
+      color: #000;
     }
   }
 }

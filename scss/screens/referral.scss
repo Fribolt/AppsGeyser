@@ -1,0 +1,90 @@
+.referral {
+  text-align: center;
+  font-weight: 700;
+  line-height: 29px;
+  font-size: 18px;
+
+  .title {
+    margin-top: 120px;
+    margin-bottom: 40px;
+  }
+
+  .banner {
+    position: relative;
+    height: 386px;
+    margin-bottom: 40px;
+    padding: 1px;
+
+    .external-bg {
+      position: absolute;
+      display: block;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      transform: translate(-50%,-50%);
+      background: center no-repeat;
+      background-size: 100% 100%;
+      z-index: 1;
+    }
+
+    .pink-bg {
+      background-image: url("../images/pink-bg.svg");
+    }
+
+    .green-bg {
+      border: solid 1px $color-button;
+      border-radius: 8px;
+    }
+  }
+
+
+  .content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    &-bg {
+      position: absolute;
+      top: 50%;
+      width: 140px;
+      height: 150px;
+      background: center no-repeat;
+    }
+
+    .subscription {
+      width: 100%;
+      height: 100%;
+      background: url("../images/subscription.svg") center no-repeat;
+    }
+
+    .left-hand {
+      left: 100px;
+      background-image: url("../images/right-hand.svg");
+      transform: translateY(-50%);
+    }
+
+    .right-hand {
+      left: 300px;
+      background-image: url("../images/left-hand.svg");
+      transform: translateY(-25%);
+    }
+  }
+
+  p {
+    margin-bottom: 85px;
+  }
+
+  b {
+    text-shadow: 1px 1px;
+  }
+
+  .text-pink {
+    color: #a62073;
+  }
+
+  .text-green {
+    color: #7aa720;
+  }
+
+}

@@ -1,0 +1,127 @@
+.reviews {
+  text-align: center;
+  line-height: 29px;
+  font-size: 18px;
+
+  .title {
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+
+  .subtitle {
+    margin-bottom: 20px;
+  }
+
+  .comments {
+    height: 130px;
+
+    .comment {
+      position: absolute;
+      top: 0;
+      opacity: 0;
+
+      &.active {
+        opacity: 1;
+        transition: opacity 1s;
+      }
+
+      .star {
+        width: 18px;
+        height: 18px;
+        margin: 0 4px;
+        background: url("../images/star-review.png") center no-repeat;
+        background-size: 100%;
+
+        &-container {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          width: 130px;
+          margin: 0 auto;
+
+          &:before {
+            content: '';
+            position: absolute;
+            display: block;
+            bottom: -60px;
+            left: 50%;
+            width: 460px;
+            height: 1px;
+            background-image: linear-gradient(to left, #ffffff, #000000 50%, #ffffff);
+            transform: translateX(-50%);
+            opacity: .2;
+          }
+        }
+      }
+    }
+  }
+
+  .slider {
+    position: relative;
+    left: -282px;
+    display: flex;
+    width: 5000px;
+    margin: 120px 0 0 281px;
+    text-align: left;
+    transition: left 0.5s;
+
+    &-container {
+      overflow: hidden;
+
+      .indicators {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 140px;
+        margin: 70px auto 0 auto;
+
+        .indicator {
+          width: 8px;
+          height: 8px;
+          margin: 0 10px;
+          border-radius: 50%;
+          background-color: #d8d8d8;
+          cursor: pointer;
+
+          &.active {
+            width: 14px;
+            height: 14px;
+            background-color: $color-button;
+          }
+        }
+      }
+    }
+
+    .slide {
+      position: relative;
+      width: 280px;
+      opacity: .3;
+
+      &.active {
+        opacity: 1;
+      }
+
+      .icon {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 63px;
+        height: 63px;
+        background: center no-repeat;
+        background-image: url('../images/slide-item-2.png');
+        background-size: 100%;
+        transform: translateY(-50%);
+      }
+
+      p {
+        font-size: 14px;
+        padding-left: 80px;
+
+        b {
+          font-size: 16px;
+          pointer-events: none;
+        }
+      }
+    }
+  }
+}

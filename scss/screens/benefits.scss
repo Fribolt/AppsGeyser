@@ -17,7 +17,7 @@
   .icon {
     width: 51px;
     height: 51px;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
     background: no-repeat center bottom;
 
     &-lightning {
@@ -29,8 +29,8 @@
     &-clock {
       background-image: url("../images/clock.svg");
     }
-    &-benefits-star {
-      background-image: url("../images/benefits-star.png");
+    &-medal {
+      background-image: url("../images/medal.svg");
       background-size: 100%;
     }
     &-phone {
@@ -44,6 +44,4 @@
   &-item {
     margin-bottom: 80px;
   }
-
-
 }

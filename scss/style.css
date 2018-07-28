@@ -56,7 +56,7 @@ a:hover {
       background: url(../images/login.svg) center no-repeat;
       background-size: 100%; }
   .btn-create-app {
-    padding: 17px 23px 17px 22px;
+    padding: 17px 35px;
     font-weight: 900;
     font-size: 16px;
     color: #fff;
@@ -91,10 +91,12 @@ a:hover {
     height: 100%; }
     .header .options-menu .btn-create-app {
       margin: 0 10px;
+      padding: 6px 12px;
       font-weight: 500;
       text-transform: capitalize; }
 
 .banner {
+  height: 100vh;
   padding-top: 78px; }
   .banner .title {
     margin-top: 162px;
@@ -123,7 +125,8 @@ a:hover {
   text-align: center;
   font-size: 18px; }
   .steps-item {
-    padding: 60px 33px 0; }
+    padding: 60px 33px 0;
+    margin-bottom: 60px; }
     .steps-item .icon {
       width: 126px;
       height: 126px;
@@ -148,26 +151,18 @@ a:hover {
           height: 1px;
           background-image: linear-gradient(to left, #ffffff, #000000 50%, #ffffff);
           opacity: 0.1; }
-    .steps-item .btn-create-app {
-      margin-top: 200px; }
-
-.counter-bloc {
-  text-align: center;
-  font-size: 18px; }
-  .counter-bloc .steps-item {
-    padding-top: 0; }
-  .counter-bloc .btn-create-app {
-    margin-top: 50px;
-    margin-bottom: 135px; }
-  .counter-bloc .title {
-    font-weight: 500;
-    line-height: 1.45;
-    font-size: 22px;
-    color: #000; }
-  .counter-bloc .counter {
+  .steps .counter {
     text-align: center;
     font-size: 50px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-bottom: 200px; }
+    .steps .counter-title {
+      margin-top: 185px;
+      margin-bottom: 50px;
+      font-weight: 500;
+      line-height: 1.45;
+      font-size: 22px;
+      color: #000; }
 
 .benefits {
   text-align: center; }
@@ -181,7 +176,7 @@ a:hover {
   .benefits .icon {
     width: 51px;
     height: 51px;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
     background: no-repeat center bottom; }
     .benefits .icon-lightning {
       background-image: url("../images/lightning.svg"); }
@@ -189,8 +184,8 @@ a:hover {
       background-image: url("../images/book.svg"); }
     .benefits .icon-clock {
       background-image: url("../images/clock.svg"); }
-    .benefits .icon-benefits-star {
-      background-image: url("../images/benefits-star.png");
+    .benefits .icon-medal {
+      background-image: url("../images/medal.svg");
       background-size: 100%; }
     .benefits .icon-phone {
       background-image: url("../images/phone.svg"); }
@@ -198,5 +193,168 @@ a:hover {
       background-image: url("../images/hand.svg"); }
   .benefits-item {
     margin-bottom: 80px; }
+
+.referral {
+  text-align: center;
+  font-weight: 700;
+  line-height: 29px;
+  font-size: 18px; }
+  .referral .title {
+    margin-top: 120px;
+    margin-bottom: 40px; }
+  .referral .banner {
+    position: relative;
+    height: 386px;
+    margin-bottom: 40px;
+    padding: 1px; }
+    .referral .banner .external-bg {
+      position: absolute;
+      display: block;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      transform: translate(-50%, -50%);
+      background: center no-repeat;
+      background-size: 100% 100%;
+      z-index: 1; }
+    .referral .banner .pink-bg {
+      background-image: url("../images/pink-bg.svg"); }
+    .referral .banner .green-bg {
+      border: solid 1px #99cc33;
+      border-radius: 8px; }
+  .referral .content {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    .referral .content-bg {
+      position: absolute;
+      top: 50%;
+      width: 140px;
+      height: 150px;
+      background: center no-repeat; }
+    .referral .content .subscription {
+      width: 100%;
+      height: 100%;
+      background: url("../images/subscription.svg") center no-repeat; }
+    .referral .content .left-hand {
+      left: 100px;
+      background-image: url("../images/right-hand.svg");
+      transform: translateY(-50%); }
+    .referral .content .right-hand {
+      left: 300px;
+      background-image: url("../images/left-hand.svg");
+      transform: translateY(-25%); }
+  .referral p {
+    margin-bottom: 85px; }
+  .referral b {
+    text-shadow: 1px 1px; }
+  .referral .text-pink {
+    color: #a62073; }
+  .referral .text-green {
+    color: #7aa720; }
+
+.reviews {
+  text-align: center;
+  line-height: 29px;
+  font-size: 18px; }
+  .reviews .title {
+    margin-top: 20px;
+    margin-bottom: 60px; }
+  .reviews .subtitle {
+    margin-bottom: 20px; }
+  .reviews .comments {
+    height: 130px; }
+    .reviews .comments .comment {
+      position: absolute;
+      top: 0;
+      opacity: 0; }
+      .reviews .comments .comment.active {
+        opacity: 1;
+        transition: opacity 1s; }
+      .reviews .comments .comment .star {
+        width: 18px;
+        height: 18px;
+        margin: 0 4px;
+        background: url("../images/star-review.png") center no-repeat;
+        background-size: 100%; }
+        .reviews .comments .comment .star-container {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          width: 130px;
+          margin: 0 auto; }
+          .reviews .comments .comment .star-container:before {
+            content: '';
+            position: absolute;
+            display: block;
+            bottom: -60px;
+            left: 50%;
+            width: 460px;
+            height: 1px;
+            background-image: linear-gradient(to left, #ffffff, #000000 50%, #ffffff);
+            transform: translateX(-50%);
+            opacity: .2; }
+  .reviews .slider {
+    position: relative;
+    left: -282px;
+    display: flex;
+    width: 5000px;
+    margin: 120px 0 0 281px;
+    text-align: left;
+    transition: left 0.5s; }
+    .reviews .slider-container {
+      overflow: hidden; }
+      .reviews .slider-container .indicators {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 140px;
+        margin: 70px auto 0 auto; }
+        .reviews .slider-container .indicators .indicator {
+          width: 8px;
+          height: 8px;
+          margin: 0 10px;
+          border-radius: 50%;
+          background-color: #d8d8d8;
+          cursor: pointer; }
+          .reviews .slider-container .indicators .indicator.active {
+            width: 14px;
+            height: 14px;
+            background-color: #99cc33; }
+    .reviews .slider .slide {
+      position: relative;
+      width: 280px;
+      opacity: .3; }
+      .reviews .slider .slide.active {
+        opacity: 1; }
+      .reviews .slider .slide .icon {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 63px;
+        height: 63px;
+        background: center no-repeat;
+        background-image: url("../images/slide-item-2.png");
+        background-size: 100%;
+        transform: translateY(-50%); }
+      .reviews .slider .slide p {
+        font-size: 14px;
+        padding-left: 80px; }
+        .reviews .slider .slide p b {
+          font-size: 16px;
+          pointer-events: none; }
+
+.about-platform {
+  margin-top: 120px;
+  text-align: center; }
+  .about-platform .title {
+    margin-bottom: 20px; }
+  .about-platform .map {
+    width: 100%;
+    height: 522px;
+    background: url("../images/map.png") center no-repeat;
+    background-size: 100%;
+    opacity: 0.5; }
 
 /*# sourceMappingURL=style.css.map */
