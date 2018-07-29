@@ -2,11 +2,42 @@
   display: flex;
   flex-direction: column;
   font-size: 18px;
+  margin-bottom: 200px;
 
   .title {
     max-width: 930px;
     margin: 0 auto 120px auto;
     font-size: 31px;
+  }
+
+  .text-container {
+    position: relative;
+  }
+
+  p {
+    position: absolute;
+    max-width: 270px;
+
+    &.top-left {
+      top: -100px;
+      left: 0;
+    }
+
+    &.top-right {
+      top: -100px;
+      left: 910px;
+    }
+
+    &.bottom-left {
+      bottom: -530px;
+      left: 0;
+    }
+
+    &.bottom-right {
+      max-width: 310px;
+      bottom: -530px;
+      left: 830px;
+    }
   }
 
   .phone {
@@ -21,7 +52,7 @@
     position: absolute;
     left: 160px;
     top: -45px;
-    width: 149px;
+    width: 150px;
     height: 141px;
     background: url("../images/about-us/message.svg") center no-repeat;
   }
@@ -42,6 +73,33 @@
     left: 46px;
     width: 60px;
     height: 100px;
-    background: url(../images/about-us/money.svg) center no-repeat;
+    background: url("../images/about-us/money.svg") center no-repeat;
+  }
+
+  .gift-box {
+    position: absolute;
+    top: 162px;
+    right: -16px;
+    width: 83px;
+    height: 93px;
+    background: url("../images/about-us/gift-box.svg") center no-repeat;
+  }
+
+  .clock {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+    width: 71px;
+    height: 51px;
+    background: url("../images/about-us/clock.svg") center no-repeat;
+  }
+
+  .book {
+    position: absolute;
+    bottom: -47px;
+    left: 250px;
+    width: 129px;
+    height: 78px;
+    background: url("../images/about-us/book.svg") center no-repeat;
   }
 }
