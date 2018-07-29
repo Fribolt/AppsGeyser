@@ -108,10 +108,11 @@
         width: 63px;
         height: 63px;
         background: center no-repeat;
-        background-image: url('../images/slide-item-2.png');
         background-size: 100%;
         transform: translateY(-50%);
       }
+
+
 
       p {
         font-size: 14px;
@@ -122,6 +123,19 @@
           pointer-events: none;
         }
       }
+    }
+
+    .slide[data-index='1'] .icon {
+      background-image: url('../images/slide-item-2.png');
+    }
+
+    .slide[data-index='2'] .icon {
+      background-image: url('../images/slide-item-2.png');
+
+    }
+
+    .slide[data-index='3'] .icon {
+      background-image: url('../images/slide-item-2.png');
     }
   }
 }

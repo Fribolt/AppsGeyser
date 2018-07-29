@@ -1,4 +1,6 @@
 .footer {
+  margin-top: 80px;
+
   a {
     color: $color-text;
 
@@ -28,6 +30,42 @@
       a {
         margin-bottom: 24px;
         font-weight: 600;
+      }
+    }
+  }
+
+  .social-network {
+
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+
+      .icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 25px;
+        background: center no-repeat;
+        background-size: 100%;
+
+        &-twitter {
+          background-image: url("../images/twitter.svg");
+        }
+        &-facebook {
+          background-image: url("../images/facebook.svg");
+        }
+        &-blogger {
+          background-image: url("../images/blogger.svg");
+        }
+        &-telegram {
+          background-image: url("../images/telegram.svg");
+        }
+        &-google-plus {
+          background-image: url("../images/google-plus.svg");
+        }
+        &-youtube {
+          background-image: url("../images/youtube.svg");
+        }
+
       }
     }
   }

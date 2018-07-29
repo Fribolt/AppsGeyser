@@ -17,8 +17,12 @@
   .icon {
     width: 51px;
     height: 51px;
-    margin: 0 auto 50px auto;
-    background: no-repeat center bottom;
+    margin: 0 auto 20px auto;
+    padding: 40px;
+    border-radius: 50%;
+    background: #fff no-repeat center;
+    box-shadow: 0 0 10px 0 rgba(230, 230, 230, 0.5);
+
 
     &-lightning {
       background-image: url("../images/lightning.svg");
@@ -31,7 +35,6 @@
     }
     &-medal {
       background-image: url("../images/medal.svg");
-      background-size: 100%;
     }
     &-phone {
       background-image: url("../images/phone.svg");
@@ -42,6 +45,12 @@
   }
 
   &-item {
-    margin-bottom: 80px;
+    max-width: 280px;
+    margin: 0 auto 80px auto;
+
+    .subtitle {
+      font-weight: 800;
+      font-size: 16px;
+    }
   }
 }

@@ -13,7 +13,6 @@
     position: relative;
     height: 386px;
     margin-bottom: 40px;
-    padding: 1px;
 
     .external-bg {
       position: absolute;
@@ -33,8 +32,7 @@
     }
 
     .green-bg {
-      border: solid 1px $color-button;
-      border-radius: 8px;
+      background-image: url("../images/green-bg.svg");
     }
   }
 
@@ -73,11 +71,21 @@
 
   p {
     margin-bottom: 85px;
+
+    &.business-offer {
+      margin-bottom: 60px;
+      padding: 25px 45px;
+      border-radius: 10px;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px 0 rgba(230, 230, 230, 0.5);
+    }
   }
 
   b {
     text-shadow: 1px 1px;
   }
+
+
 
   .text-pink {
     color: #a62073;
