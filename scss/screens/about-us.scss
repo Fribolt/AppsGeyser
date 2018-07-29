@@ -1,3 +1,47 @@
 .about-us {
+  display: flex;
+  flex-direction: column;
   font-size: 18px;
+
+  .title {
+    max-width: 930px;
+    margin: 0 auto 120px auto;
+    font-size: 31px;
+  }
+
+  .phone {
+    position: relative;
+    width: 640px;
+    min-height: 383px;
+    margin: auto;
+    background: url("../images/about-us/phone.svg") center no-repeat;
+  }
+
+  .message {
+    position: absolute;
+    left: 160px;
+    top: -45px;
+    width: 149px;
+    height: 141px;
+    background: url("../images/about-us/message.svg") center no-repeat;
+  }
+
+  .paint-can {
+    position: absolute;
+    bottom: 32px;
+    left: 368px;
+    width: 150px;
+    height: 130px;
+    background: url("../images/about-us/panit-can.svg") top right no-repeat,
+                url("../images/about-us/brush.svg") bottom left no-repeat  ;
+  }
+
+  .money {
+    position: absolute;
+    top: 86px;
+    left: 46px;
+    width: 60px;
+    height: 100px;
+    background: url(../images/about-us/money.svg) center no-repeat;
+  }
 }

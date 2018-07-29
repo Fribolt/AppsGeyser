@@ -8,7 +8,7 @@
   }
 
   .subtitle {
-    //margin-bottom: 80px;
+    margin-bottom: 80px;
     font-weight: 300;
   }
 
@@ -19,7 +19,7 @@
 
     .slide {
       display: flex;
-      width: 1110px;
+      //width: 1110px;
 
       //@media (min-width: 768px) {
       //  width: 720px;
@@ -67,6 +67,72 @@
           font-weight: 700;
           font-size: 18px;
         }
+      }
+
+    }
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+    a {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0 0 10px 0 rgba(230, 230, 230, 0.5);
+
+      &:before {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 16px;
+        width: 10px;
+        height: 10px;
+        border: 1px solid #000;
+        transform: rotate(45deg);
+      }
+
+    }
+    .button-prev {
+      &:before {
+        left: 17px;
+        border-top-color: transparent;
+        border-right-color: transparent;
+      }
+    }
+    .button-next {
+      &:before {
+        right: 17px;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+      }
+    }
+  }
+
+  .indicators {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    margin: 60px auto 50px auto;
+
+    .indicator {
+      width: 8px;
+      height: 8px;
+      margin: 0 10px;
+      border-radius: 50%;
+      background-color: #d8d8d8;
+      cursor: pointer;
+
+      &.active {
+        width: 14px;
+        height: 14px;
+        background-color: $color-button;
       }
     }
   }

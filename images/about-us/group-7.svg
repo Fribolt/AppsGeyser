@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="93px" viewBox="0 0 80 93" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>A43DCC78-D815-4907-B93E-91F5F43F16E4</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="0.706478873 23.1494648 0.836619718 69.0739718 40.8033803 45.9996056 40.6732394 0.0750985915"></polygon>
+        <polygon id="path-3" points="0.130309859 68.9988169 39.8367887 92.0737465 39.7066479 46.1492394 39.8367887 -2.27373675e-13 0.000169014085 23.0743099"></polygon>
+        <polygon id="path-5" points="39.9660845 0 -0.000112676056 23.0743662 39.7063662 46.1492958 79.6731268 23.0749296"></polygon>
+        <polygon id="path-7" points="39.5014792 18.9998708 18.2910208 24.4752458 26.2967708 25.6907042 22.5315625 29.9428708 33.8142708 27.0249958 37.3766875 19.7477458 40.4818542 20.2644125"></polygon>
+        <filter x="-9.0%" y="-9.1%" width="118.0%" height="136.6%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.82745098   0 0 0 0 0.160784314   0 0 0 0 0.57254902  0 0 0 0.160722373 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-9" points="29.0373167 35.6987708 35.770775 32.9229792 38.9857333 37.3508125 45.3161917 24.4044375 38.4819833 23.2651875 35.3768167 22.7472292"></polygon>
+        <filter x="-12.3%" y="-20.5%" width="124.6%" height="127.4%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="-1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.82745098   0 0 0 0 0.160784314   0 0 0 0 0.57254902  0 0 0 0.160722373 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Illustration" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ill" transform="translate(-975.000000, -335.000000)">
+            <g id="Group-2" transform="translate(109.000000, 90.000000)">
+                <g id="Group-7" transform="translate(866.000000, 245.000000)">
+                    <g id="Rectangle" transform="translate(39.000000, 23.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#D32992" xlink:href="#path-1"></use>
+                        <rect fill="#FFFFFF" opacity="0.800000012" mask="url(#mask-2)" x="18" y="3" width="8" height="67" rx="4"></rect>
+                    </g>
+                    <g id="Path-8">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <use id="Mask" fill="#E54CAA" xlink:href="#path-3"></use>
+                        <polygon fill="#FFFFFF" opacity="0.800000012" mask="url(#mask-4)" points="16 30 16 82 24 87.5 24 35.5"></polygon>
+                    </g>
+                    <g id="Path-7">
+                        <mask id="mask-6" fill="white">
+                            <use xlink:href="#path-5"></use>
+                        </mask>
+                        <use id="Mask" fill="#F869C1" xlink:href="#path-5"></use>
+                        <path d="M9,41 L79.5,0.5" stroke="#FFFFFF" stroke-width="8" opacity="0.800000012" mask="url(#mask-6)"></path>
+                        <path d="M5.08798557,1.34760452 L75.4120144,42.1523955" stroke="#FFFFFF" stroke-width="8" opacity="0.800000012" mask="url(#mask-6)"></path>
+                        <g id="Fill-1" mask="url(#mask-6)">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                            <use fill="#FDE1F2" fill-rule="evenodd" xlink:href="#path-7"></use>
+                        </g>
+                        <g id="Fill-2" mask="url(#mask-6)">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                            <use fill="#FDE1F2" fill-rule="evenodd" xlink:href="#path-9"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
