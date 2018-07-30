@@ -18,5 +18,6 @@
     <orderEntry type="library" name="wow" level="application" />
     <orderEntry type="library" name="fullpage" level="application" />
     <orderEntry type="library" name="jquery.onepage-scroll" level="application" />
+    <orderEntry type="library" name="flipclock" level="application" />
   </component>
 </module>
