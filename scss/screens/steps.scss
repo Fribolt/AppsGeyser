@@ -1,5 +1,5 @@
 .steps {
-  padding-top: #{$header-height};
+  padding: 100px 0;
   text-align: center;
   font-size: 18px;
 
@@ -49,26 +49,5 @@
         }
       }
     }
-  }
-
-  #clock {
-    max-width: 475px;
-    margin: 0 auto;
-  }
-  .counter {
-    text-align: center;
-    font-size: 50px;
-    text-transform: uppercase;
-    margin-bottom: 200px;
-
-    &-title {
-      margin-top: 185px;
-      margin-bottom: 50px;
-      font-weight: 500;
-      line-height: 1.45;
-      font-size: 22px;
-      color: #000;
-    }
-
   }
 }

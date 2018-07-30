@@ -57,11 +57,10 @@ a:hover {
       background-size: 100%; }
   .btn-create-app {
     padding: 17px 35px;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 16px;
     color: #fff;
-    text-transform: uppercase;
-    text-shadow: 0 1px; }
+    text-transform: uppercase; }
 
 .header {
   padding: 20px 0;
@@ -161,6 +160,7 @@ section.banner {
   section.banner .title {
     margin-top: 162px;
     text-align: left;
+    font-weight: 500;
     line-height: 50px;
     font-size: 40px; }
   section.banner .subtitle {
@@ -257,7 +257,7 @@ section.banner {
     background: url("../images/about-us/book.svg") center no-repeat; }
 
 .steps {
-  padding-top: 78px;
+  padding: 100px 0;
   text-align: center;
   font-size: 18px; }
   .steps-item {
@@ -291,26 +291,26 @@ section.banner {
           height: 1px;
           background-image: linear-gradient(to left, #ffffff, #000000 50%, #ffffff);
           opacity: 0.1; }
-  .steps #clock {
+
+.counter {
+  padding: 80px 0;
+  text-align: center;
+  font-size: 50px;
+  background-color: #fff; }
+  .counter-title {
+    margin-bottom: 50px;
+    font-weight: 500;
+    line-height: 1.45;
+    font-size: 22px;
+    color: #000; }
+  .counter #clock {
     max-width: 475px;
     margin: 0 auto; }
-  .steps .counter {
-    text-align: center;
-    font-size: 50px;
-    text-transform: uppercase;
-    margin-bottom: 200px; }
-    .steps .counter-title {
-      margin-top: 185px;
-      margin-bottom: 50px;
-      font-weight: 500;
-      line-height: 1.45;
-      font-size: 22px;
-      color: #000; }
 
 .benefits {
-  text-align: center; }
+  text-align: center;
+  padding: 120px 0; }
   .benefits .title {
-    margin-top: 20px;
     margin-bottom: 100px; }
   .benefits .subtitle {
     margin-bottom: 14px; }
@@ -349,7 +349,6 @@ section.banner {
   line-height: 29px;
   font-size: 18px; }
   .referral .title {
-    margin-top: 120px;
     margin-bottom: 40px; }
   .referral .banner {
     position: relative;
@@ -393,15 +392,14 @@ section.banner {
       background-image: url("../images/left-hand.svg");
       transform: translateY(-25%); }
   .referral p {
-    margin-bottom: 85px; }
+    margin-bottom: 85px;
+    font-weight: 500; }
     .referral p.business-offer {
       margin-bottom: 60px;
       padding: 25px 45px;
       border-radius: 10px;
       background-color: #ffffff;
       box-shadow: 0 0 10px 0 rgba(230, 230, 230, 0.5); }
-  .referral b {
-    text-shadow: 1px 1px; }
   .referral .text-pink {
     color: #a62073; }
   .referral .text-green {
@@ -513,12 +511,16 @@ section.banner {
     height: 522px; }
   .about-platform .calculate {
     display: flex;
+    justify-content: center;
     padding: 24px 0 30px 0;
     border-radius: 8px;
     background: #fff;
     box-shadow: 0 0 10px 0 rgba(230, 230, 230, 0.5); }
     .about-platform .calculate-item {
-      flex: 1; }
+      padding: 0 50px; }
+      .about-platform .calculate-item:nth-child(2) {
+        border-right: 1px solid #e5e5e5;
+        border-left: 1px solid #e5e5e5; }
       .about-platform .calculate-item p {
         margin: 0; }
       .about-platform .calculate-item p.title {

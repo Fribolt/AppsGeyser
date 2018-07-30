@@ -5,7 +5,6 @@
   font-size: 18px;
 
   .title {
-    margin-top: 120px;
     margin-bottom: 40px;
   }
 
@@ -71,6 +70,7 @@
 
   p {
     margin-bottom: 85px;
+    font-weight: 500;
 
     &.business-offer {
       margin-bottom: 60px;
@@ -80,12 +80,6 @@
       box-shadow: 0 0 10px 0 rgba(230, 230, 230, 0.5);
     }
   }
-
-  b {
-    text-shadow: 1px 1px;
-  }
-
-
 
   .text-pink {
     color: #a62073;
