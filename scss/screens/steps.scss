@@ -51,6 +51,10 @@
     }
   }
 
+  #clock {
+    max-width: 475px;
+    margin: 0 auto;
+  }
   .counter {
     text-align: center;
     font-size: 50px;
@@ -65,5 +69,6 @@
       font-size: 22px;
       color: #000;
     }
+
   }
 }

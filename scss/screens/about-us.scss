@@ -42,10 +42,11 @@
 
   .phone {
     position: relative;
-    width: 640px;
-    min-height: 383px;
+    width: 636px;
+    min-height: 401px;
     margin: auto;
     background: url("../images/about-us/phone.svg") center no-repeat;
+    background-size: 90%;
   }
 
   .message {
