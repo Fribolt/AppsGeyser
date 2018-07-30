@@ -161,7 +161,6 @@ section.banner {
     margin-top: 162px;
     text-align: left;
     font-weight: 500;
-    line-height: 50px;
     font-size: 40px; }
   section.banner .subtitle {
     margin: 24px 0 33px 0;
@@ -216,42 +215,42 @@ section.banner {
   .about-us .message {
     position: absolute;
     left: 160px;
-    top: -45px;
+    top: -15px;
     width: 150px;
     height: 141px;
     background: url("../images/about-us/message.svg") center no-repeat; }
   .about-us .paint-can {
     position: absolute;
-    bottom: 32px;
+    bottom: 42px;
     left: 368px;
     width: 150px;
     height: 130px;
     background: url("../images/about-us/panit-can.svg") top right no-repeat, url("../images/about-us/brush.svg") bottom left no-repeat; }
   .about-us .money {
     position: absolute;
-    top: 86px;
+    top: 116px;
     left: 46px;
     width: 60px;
     height: 100px;
     background: url("../images/about-us/money.svg") center no-repeat; }
   .about-us .gift-box {
     position: absolute;
-    top: 162px;
-    right: -16px;
+    top: 172px;
+    right: -6px;
     width: 83px;
     height: 93px;
     background: url("../images/about-us/gift-box.svg") center no-repeat; }
   .about-us .clock {
     position: absolute;
-    top: 350px;
-    left: 30px;
+    top: 330px;
+    left: 40px;
     width: 71px;
     height: 51px;
     background: url("../images/about-us/clock.svg") center no-repeat; }
   .about-us .book {
     position: absolute;
-    bottom: -47px;
-    left: 250px;
+    bottom: -27px;
+    left: 241px;
     width: 129px;
     height: 78px;
     background: url("../images/about-us/book.svg") center no-repeat; }

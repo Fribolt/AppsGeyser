@@ -4,22 +4,20 @@
     <meta charset="UTF-8">
     <title>AppsGeyser</title>
 
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="vendors/animate/animateCss.css">
+    <link rel="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" crossorigin="anonymous">
     <link rel="stylesheet" href="scss/style.css">
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" crossorigin="anonymous"></script>-->
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/onepage-scroll/1.3.1/jquery.onepage-scroll.js" crossorigin="anonymous"></script>-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js" crossorigin="anonymous"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/onepage-scroll/1.3.1/jquery.onepage-scroll.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<header class="header">
+<header class="header fadeIn wow" data-wow-duration="2s">
     <div class="container">
         <div class="row">
             <div class="col-md-2">
@@ -53,12 +51,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-5">
-                <h1 class="title">The <b>Faster</b> and The <b>Simplest</b> App Builder for your app creation.</h1>
-                <h3 class="subtitle">— Without any coding and fees</h3>
-                <button class="btn btn-create-app">Create Now for FREE</button>
+                <h1 class="title fadeIn wow" data-wow-duration="2s">The <b>Faster</b> and The <b>Simplest</b> App Builder for your app creation.</h1>
+                <h3 class="subtitle fadeIn wow" data-wow-delay="1s">— Without any coding and fees</h3>
+                <button class="btn btn-create-app fadeIn wow" data-wow-delay="3s">Create Now for FREE</button>
             </div>
             <div class="col-md-7 relative">
-                <div class="banner-bg"></div>
+                <div class="banner-bg fadeIn wow" data-wow-delay="2s"></div>
             </div>
         </div>
     </div>
@@ -67,7 +65,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h2 class="title">Free and Simple Tool to Create, Download, Distribute and Monetize Your App</h2>
+                <h2 class="title zoomIn wow">Free and Simple Tool to Create, Download, Distribute and Monetize Your App</h2>
             </div>
             <div class="w-100">
                 <div class="text-container">
@@ -78,18 +76,18 @@
                 </div>
             </div>
 
-            <div class="phone">
-                <div class="message"></div>
-                <div class="paint-can"></div>
-                <div class="money"></div>
-                <div class="gift-box"></div>
-                <div class="clock"></div>
-                <div class="book"></div>
+            <div id="phone" class="phone fadeIn wow" data-wow-delay="1s">
+                <div class="message bounceInDown wow" data-wow-delay="1.5s"></div>
+                <div class="paint-can bounceInDown wow" data-wow-delay="1.5s"></div>
+                <div class="money bounceInDown wow" data-wow-delay="2s"></div>
+                <div class="gift-box bounceInDown wow" data-wow-delay="2s"></div>
+                <div class="clock bounceInDown wow" data-wow-delay="2.5s"></div>
+                <div class="book bounceInDown wow" data-wow-delay="2.5s"></div>
             </div>
         </div>
     </div>
 </section>
-<section class="steps">
+<section class="steps  animated infinite bounce delay-2s">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -477,15 +475,27 @@
         </div>
     </div>
 </footer>
-<script src="js/comments-slider.js"></script>
 
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+<script src="js/comments-slider.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
 <script src="https://www.appsgeyser.com/js/datamaps.world.min.js"></script>
 <script src="js/map.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.13.0/bodymovin.js" type="text/javascript"></script>
 <script>
+    var animation = bodymovin.loadAnimation({
+        container: document.getElementById('phone'), // Required
+        path: 'appG.json', // Required
+        renderer: 'svg', // Required
+        loop: true, // Optional
+        autoplay: true, // Optional
+        name: "Hello World" // Name for future reference. Optional.
+    })
+</script>
+<script>
+    new WOW().init();
     var clock;
     clock = $('#clock').FlipClock({
         clockFace : 'HourCounter',
