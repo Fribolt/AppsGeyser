@@ -96,7 +96,8 @@ a:hover {
       margin: 0 10px;
       padding: 6px 12px;
       font-weight: 500;
-      text-transform: capitalize; }
+      text-transform: capitalize;
+      box-shadow: none; }
 
 .footer {
   margin-top: 80px; }
@@ -115,12 +116,12 @@ a:hover {
       flex-direction: column; }
       .footer .footer-navigation .navigation-item h4 {
         margin-bottom: 30px;
-        font-weight: 800;
+        font-weight: 700;
         font-size: 12px;
         text-transform: uppercase; }
       .footer .footer-navigation .navigation-item a {
         margin-bottom: 24px;
-        font-weight: 600; }
+        font-weight: 500; }
   .footer .social-network .flex-container {
     display: flex;
     flex-direction: row; }
@@ -393,7 +394,6 @@ section.banner {
     margin-bottom: 85px;
     font-weight: 500; }
     .referral p.business-offer {
-      margin-bottom: 60px;
       padding: 25px 45px;
       border-radius: 10px;
       background-color: #ffffff;
@@ -411,7 +411,8 @@ section.banner {
     margin-top: 20px;
     margin-bottom: 60px; }
   .reviews .subtitle {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    font-style: italic; }
   .reviews .comments {
     height: 130px; }
     .reviews .comments .comment {
@@ -525,7 +526,7 @@ section.banner {
       .about-platform .calculate-item p.title {
         margin-bottom: 6px;
         font-size: 40px;
-        font-weight: 700; }
+        font-weight: 500; }
       .about-platform .calculate-item p.subtitle {
         font-size: 18px;
         color: #99cc33; }
@@ -566,7 +567,7 @@ section.banner {
             background-image: url("../images/media-player.png"); }
         .portfolio .slider .slide .template-title {
           margin-top: 30px;
-          font-weight: 700;
+          font-weight: 600;
           font-size: 18px; }
   .portfolio .button-container {
     display: flex;
