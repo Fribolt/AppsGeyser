@@ -374,7 +374,6 @@ section.banner {
     height: 100%; }
     .referral .content-bg {
       position: absolute;
-      top: 50%;
       width: 140px;
       height: 150px;
       background: center no-repeat; }
@@ -383,13 +382,13 @@ section.banner {
       height: 100%;
       background: url("../images/subscription.svg") center no-repeat; }
     .referral .content .left-hand {
+      top: 30%;
       left: 100px;
-      background-image: url("../images/right-hand.svg");
-      transform: translateY(-50%); }
+      background-image: url("../images/right-hand.svg"); }
     .referral .content .right-hand {
+      top: 40%;
       left: 300px;
-      background-image: url("../images/left-hand.svg");
-      transform: translateY(-25%); }
+      background-image: url("../images/left-hand.svg"); }
   .referral p {
     margin-bottom: 85px;
     font-weight: 500; }
@@ -474,9 +473,10 @@ section.banner {
             background-color: #99cc33; }
     .reviews .slider .slide {
       position: relative;
-      width: 280px;
-      opacity: .3; }
-      .reviews .slider .slide.active {
+      width: 280px; }
+      .reviews .slider .slide > * {
+        opacity: .3; }
+      .reviews .slider .slide.active > * {
         opacity: 1; }
       .reviews .slider .slide .icon {
         position: absolute;
@@ -537,7 +537,6 @@ section.banner {
     margin-bottom: 20px;
     font-weight: 500; }
   .portfolio .subtitle {
-    margin-bottom: 80px;
     font-weight: 300; }
   .portfolio .slider {
     position: relative;

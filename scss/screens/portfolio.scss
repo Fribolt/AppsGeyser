@@ -8,7 +8,6 @@
   }
 
   .subtitle {
-    margin-bottom: 80px;
     font-weight: 300;
   }
 
@@ -19,18 +18,6 @@
 
     .slide {
       display: flex;
-      //width: 1110px;
-
-      //@media (min-width: 768px) {
-      //  width: 720px;
-      //  left: -720px;
-      //
-      //}
-      //@media (min-width: 992px) {
-      //  width: 960px;
-      //  left: -960px;
-      //
-      //}
 
       &-container {
         position: relative;

@@ -95,10 +95,16 @@
     .slide {
       position: relative;
       width: 280px;
-      opacity: .3;
+
+      > * {
+        opacity: .3;
+      }
 
       &.active {
-        opacity: 1;
+        > * {
+          opacity: 1;
+        }
+
       }
 
       .icon {
