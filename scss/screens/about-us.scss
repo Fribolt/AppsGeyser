@@ -19,23 +19,23 @@
     max-width: 270px;
 
     &.top-left {
-      top: -100px;
+      top: 30px;
       left: 0;
     }
 
     &.top-right {
-      top: -100px;
-      left: 910px;
+      top: -40px;
+      left: 878px;
     }
 
     &.bottom-left {
-      bottom: -530px;
+      bottom: -350px;
       left: 0;
     }
 
     &.bottom-right {
       max-width: 310px;
-      bottom: -530px;
+      bottom: -390px;
       left: 830px;
     }
   }
@@ -77,6 +77,7 @@
     height: 90px;
     background: url("../images/about-us/money.svg") center no-repeat;
     background-size: 100%;
+    z-index: 1;
   }
 
   .gift-box {
@@ -87,6 +88,7 @@
     height: 93px;
     background: url("../images/about-us/gift-box.svg") center no-repeat;
     background-size: 100%;
+    z-index: 1;
   }
 
   .clock {
@@ -97,6 +99,7 @@
     height: 51px;
     background: url("../images/about-us/clock.svg") center no-repeat;
     background-size: 100%;
+    z-index: 1;
   }
 
   .book {
@@ -107,5 +110,13 @@
     height: 78px;
     background: url("../images/about-us/book.svg") center no-repeat;
     background-size: 100%;
+    z-index: 1;
+  }
+
+  #animate-about-us {
+    position: absolute;
+    left: -337px;
+    top: -122px;
+    width: 1283px;
   }
 }

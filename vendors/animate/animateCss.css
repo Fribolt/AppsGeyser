@@ -494,79 +494,100 @@
 
 @-webkit-keyframes wobble {
     from {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
+        transform: rotate(0deg);
     }
 
     15% {
-        -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
-        transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+        transform: rotate(4deg);
     }
 
     30% {
-        -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
-        transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+        transform: rotate(8deg);
     }
 
     45% {
-        -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
-        transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+        transform: rotate(12deg);
     }
 
     60% {
-        -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
-        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+        transform: rotate(14deg);
     }
 
     75% {
-        -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
-        transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+        transform: rotate(18deg);
     }
 
     to {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
+        transform: rotate(20deg);
     }
 }
 
 @keyframes wobble {
     from {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
+        transform: rotate(0deg);
     }
 
     15% {
-        -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
-        transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+        transform: rotate(4deg);
     }
 
     30% {
-        -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
-        transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+        transform: rotate(8deg);
     }
 
     45% {
-        -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
-        transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+        transform: rotate(12deg);
     }
 
     60% {
-        -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
-        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+        transform: rotate(14deg);
     }
 
     75% {
-        -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
-        transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+        transform: rotate(18deg);
     }
 
     to {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
+        transform: rotate(20deg);
+    }
+}
+
+@keyframes wobble2 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    15% {
+        transform: rotate(-4deg);
+    }
+
+    30% {
+        transform: rotate(-8deg);
+    }
+
+    45% {
+        transform: rotate(-12deg);
+    }
+
+    60% {
+        transform: rotate(-14deg);
+    }
+
+    75% {
+        transform: rotate(-18deg);
+    }
+
+    to {
+        transform: rotate(-20deg);
     }
 }
 
 .wobble {
+    -webkit-animation-name: wobble;
+    animation-name: wobble;
+}
+
+.wobble2 {
     -webkit-animation-name: wobble;
     animation-name: wobble;
 }
