@@ -172,25 +172,67 @@ section.banner {
     padding: 17px 23px 17px 22px; }
   section.banner .banner-bg {
     position: absolute;
-    top: 35px;
-    right: 130px;
-    width: 60%;
+    top: 75px;
+    right: 100px;
+    width: 370px;
     height: 715px;
-    background: url("../images/banner/banner-bg.png") top right no-repeat;
-    background-size: 100%;
-    z-index: 3; }
-    section.banner .banner-bg-1 {
-      top: 68px;
-      right: 193px;
-      width: 327px;
-      z-index: 2;
-      transform: rotate(-20deg); }
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url("../images/banner/banner-bg.png");
+    z-index: 3;
+    background-size: 355px; }
     section.banner .banner-bg-2 {
-      top: 42px;
-      right: 130px;
-      width: 327px;
+      position: absolute;
+      top: 77px;
+      left: 220px;
+      width: 370px;
+      height: 715px;
       z-index: 2;
-      transform: rotate(20deg); }
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-image: url("../images/banner/banner-bg-2.png");
+      background-size: 319px;
+      animation-fill-mode: forwards;
+      opacity: 0; }
+    section.banner .banner-bg-3 {
+      position: absolute;
+      top: 77px;
+      left: 220px;
+      width: 370px;
+      height: 715px;
+      z-index: 2;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-image: url("../images/banner/banner-bg-3.png");
+      background-size: 319px;
+      animation-fill-mode: forwards;
+      opacity: 0; }
+    section.banner .banner-bg-4 {
+      position: absolute;
+      top: 152px;
+      left: 220px;
+      width: 370px;
+      height: 715px;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-image: url("../images/banner/banner-bg-4.png");
+      background-size: 293px;
+      animation-fill-mode: forwards;
+      opacity: 0;
+      z-index: 1; }
+    section.banner .banner-bg-5 {
+      position: absolute;
+      top: 152px;
+      left: 220px;
+      width: 370px;
+      height: 715px;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-image: url(../images/banner/banner-bg-5.png);
+      background-size: 303px;
+      animation-fill-mode: forwards;
+      opacity: 0;
+      z-index: 2; }
 
 .about-us {
   display: flex;
@@ -338,7 +380,8 @@ section.banner {
   text-align: center;
   padding: 120px 0; }
   .benefits .title {
-    margin-bottom: 100px; }
+    margin-bottom: 100px;
+    font-weight: 500; }
   .benefits .subtitle {
     margin-bottom: 14px; }
   .benefits p {

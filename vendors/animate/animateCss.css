@@ -494,91 +494,69 @@
 
 @-webkit-keyframes wobble {
     from {
+        left: 220px;
         transform: rotate(0deg);
     }
 
-    15% {
-        transform: rotate(4deg);
-    }
-
-    30% {
-        transform: rotate(8deg);
-    }
-
-    45% {
-        transform: rotate(12deg);
-    }
-
-    60% {
-        transform: rotate(14deg);
-    }
-
-    75% {
-        transform: rotate(18deg);
-    }
-
     to {
-        transform: rotate(20deg);
+        left: 190px;
+        transform: rotate(-20deg);
     }
 }
-
+/*TODO rename animation */
 @keyframes wobble {
     from {
+        left: 220px;
         transform: rotate(0deg);
-    }
-
-    15% {
-        transform: rotate(4deg);
-    }
-
-    30% {
-        transform: rotate(8deg);
-    }
-
-    45% {
-        transform: rotate(12deg);
-    }
-
-    60% {
-        transform: rotate(14deg);
-    }
-
-    75% {
-        transform: rotate(18deg);
+        opacity: 0;
     }
 
     to {
-        transform: rotate(20deg);
+        left: 190px;
+        transform: rotate(-20deg);
+        opacity: 1;
     }
 }
 
 @keyframes wobble2 {
     from {
+        left: 220px;;
         transform: rotate(0deg);
-    }
-
-    15% {
-        transform: rotate(-4deg);
-    }
-
-    30% {
-        transform: rotate(-8deg);
-    }
-
-    45% {
-        transform: rotate(-12deg);
-    }
-
-    60% {
-        transform: rotate(-14deg);
-    }
-
-    75% {
-        transform: rotate(-18deg);
+        opacity: 0;
     }
 
     to {
-        transform: rotate(-20deg);
+        left: 240px;
+        transform: rotate(20deg);
+        opacity: 1;
+    }
+}
+
+@keyframes wobble3 {
+    from {
+        left: 220px;
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+
+    to {
+        left: 100px;
+        transform: rotate(-35deg);
+        opacity: 1;
+    }
+}
+
+@keyframes wobble4 {
+    from {
+        left: 220px;
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+
+    to {
+        left: 310px;
+        transform: rotate(40deg);
+        opacity: 1;
     }
 }
 
@@ -589,8 +567,19 @@
 
 .wobble2 {
     -webkit-animation-name: wobble;
-    animation-name: wobble;
+    animation-name: wobble2;
 }
+
+.wobble3 {
+-webkit-animation-name: wobble;
+animation-name: wobble3;
+}
+
+.wobble4 {
+-webkit-animation-name: wobble;
+animation-name: wobble4;
+}
+
 
 @-webkit-keyframes jello {
     from,
