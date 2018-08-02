@@ -4,10 +4,6 @@
   background-color: $color-button;
   box-shadow: 0 10px 20px 0 rgba(96, 165, 16, 0.42);
 
-  &:hover {
-   background-color: $color-button-hover;
-  }
-
   &:focus {
     box-shadow: 0 10px 20px 0 rgba(96, 165, 16, 0.42);
   }
@@ -49,5 +45,9 @@
     font-size: 16px;
     color: #fff;
     text-transform: uppercase;
+
+    &:hover {
+      background-color: $color-button-hover;
+    }
   }
 }
