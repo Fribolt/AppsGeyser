@@ -31,8 +31,12 @@ a:hover {
   text-decoration: none; }
 
 .btn {
+  position: relative;
+  z-index: 999;
   background-color: #99cc33;
   box-shadow: 0 10px 20px 0 rgba(96, 165, 16, 0.42); }
+  .btn:hover {
+    background-color: red; }
   .btn:focus {
     box-shadow: 0 10px 20px 0 rgba(96, 165, 16, 0.42); }
   .btn-language, .btn-login {
