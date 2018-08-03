@@ -61,6 +61,8 @@ a:hover {
     font-size: 16px;
     color: #fff;
     text-transform: uppercase; }
+    .btn-create-app:hover {
+      background-color: #60A510; }
 
 .header {
   padding: 20px 0;
