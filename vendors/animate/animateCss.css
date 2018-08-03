@@ -494,75 +494,69 @@
 
 @-webkit-keyframes wobble {
     from {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-
-    15% {
-        -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
-        transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
-    }
-
-    30% {
-        -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
-        transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
-    }
-
-    45% {
-        -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
-        transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
-    }
-
-    60% {
-        -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
-        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
-    }
-
-    75% {
-        -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
-        transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+        left: 220px;
+        transform: rotate(0deg);
     }
 
     to {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
+        left: 190px;
+        transform: rotate(-20deg);
+    }
+}
+/*TODO rename animation */
+@keyframes wobble {
+    from {
+        left: 220px;
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+
+    to {
+        left: 190px;
+        transform: rotate(-20deg);
+        opacity: 1;
     }
 }
 
-@keyframes wobble {
+@keyframes wobble2 {
     from {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-
-    15% {
-        -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
-        transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
-    }
-
-    30% {
-        -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
-        transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
-    }
-
-    45% {
-        -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
-        transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
-    }
-
-    60% {
-        -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
-        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
-    }
-
-    75% {
-        -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
-        transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+        left: 220px;;
+        transform: rotate(0deg);
+        opacity: 0;
     }
 
     to {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
+        left: 240px;
+        transform: rotate(20deg);
+        opacity: 1;
+    }
+}
+
+@keyframes wobble3 {
+    from {
+        left: 220px;
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+
+    to {
+        left: 100px;
+        transform: rotate(-35deg);
+        opacity: 1;
+    }
+}
+
+@keyframes wobble4 {
+    from {
+        left: 220px;
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+
+    to {
+        left: 310px;
+        transform: rotate(40deg);
+        opacity: 1;
     }
 }
 
@@ -570,6 +564,22 @@
     -webkit-animation-name: wobble;
     animation-name: wobble;
 }
+
+.wobble2 {
+    -webkit-animation-name: wobble;
+    animation-name: wobble2;
+}
+
+.wobble3 {
+-webkit-animation-name: wobble;
+animation-name: wobble3;
+}
+
+.wobble4 {
+-webkit-animation-name: wobble;
+animation-name: wobble4;
+}
+
 
 @-webkit-keyframes jello {
     from,

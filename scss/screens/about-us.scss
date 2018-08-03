@@ -19,23 +19,23 @@
     max-width: 270px;
 
     &.top-left {
-      top: -100px;
+      top: 30px;
       left: 0;
     }
 
     &.top-right {
-      top: -100px;
-      left: 910px;
+      top: -40px;
+      left: 878px;
     }
 
     &.bottom-left {
-      bottom: -530px;
+      bottom: -350px;
       left: 0;
     }
 
     &.bottom-right {
       max-width: 310px;
-      bottom: -530px;
+      bottom: -390px;
       left: 830px;
     }
   }
@@ -51,56 +51,72 @@
 
   .message {
     position: absolute;
-    left: 160px;
-    top: -15px;
-    width: 150px;
+    left: 153px;
+    top: -22px;
+    width: 134px;
     height: 141px;
     background: url("../images/about-us/message.svg") center no-repeat;
+    background-size: 100%;
   }
 
   .paint-can {
     position: absolute;
-    bottom: 42px;
+    bottom: 65px;
     left: 368px;
-    width: 150px;
-    height: 130px;
+    width: 130px;
+    height: 108px;
     background: url("../images/about-us/panit-can.svg") top right no-repeat,
-                url("../images/about-us/brush.svg") bottom left no-repeat  ;
+                url("../images/about-us/brush.svg") bottom left no-repeat;
   }
 
   .money {
     position: absolute;
     top: 116px;
-    left: 46px;
-    width: 60px;
-    height: 100px;
+    left: 62px;
+    width: 54px;
+    height: 90px;
     background: url("../images/about-us/money.svg") center no-repeat;
+    background-size: 100%;
+    z-index: 1;
   }
 
   .gift-box {
     position: absolute;
-    top: 172px;
-    right: -6px;
-    width: 83px;
+    top: 183px;
+    right: 23px;
+    width: 74px;
     height: 93px;
     background: url("../images/about-us/gift-box.svg") center no-repeat;
+    background-size: 100%;
+    z-index: 1;
   }
 
   .clock {
     position: absolute;
-    top: 330px;
-    left: 40px;
-    width: 71px;
+    top: 352px;
+    left: 68px;
+    width: 62px;
     height: 51px;
     background: url("../images/about-us/clock.svg") center no-repeat;
+    background-size: 100%;
+    z-index: 1;
   }
 
   .book {
     position: absolute;
-    bottom: -27px;
-    left: 241px;
-    width: 129px;
+    bottom: -12px;
+    left: 273px;
+    width: 115px;
     height: 78px;
     background: url("../images/about-us/book.svg") center no-repeat;
+    background-size: 100%;
+    z-index: 1;
+  }
+
+  #animate-about-us {
+    position: absolute;
+    left: -337px;
+    top: -122px;
+    width: 1283px;
   }
 }
