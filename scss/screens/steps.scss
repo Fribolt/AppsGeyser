@@ -12,18 +12,23 @@
     box-shadow: 0 0 10px 0 rgba(230, 230, 230, 0.5);
 
     .icon {
-      width: 86px;
+      width: 126px;
       height: 126px;
       margin: 0 auto;
       background: no-repeat center bottom;
 
       &-money {
-        width: 96px;
+        background-image: url("../images/money.svg");
       }
 
       &-star {
-        width: 126px;
+        background-image: url("../images/star.svg");
       }
+
+      &-magic-wand{
+        background-image: url("../images/magic-wand.svg");
+      }
+
     }
 
     p {

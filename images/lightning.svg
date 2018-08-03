@@ -1,1 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"><title>36BB0D00-B625-4D18-9BE9-18EDE4D29CF0</title><desc>Created with sketchtool.</desc><g fill="none"><g><path stroke="#9c3" stroke-width="2" d="M37.52 19.5h3.9c1.64 0 3 1.35 3 3 0 .75-.28 1.46-.77 2L28.42 41.6c-.74.82-2 .9-2.83.15-.54-.47-.78-1.18-.64-1.88l2.06-10.3H24c-1.66 0-3-1.35-3-3 0-.7.25-1.4.7-1.94L36.07 7.7c.7-.84 1.97-.94 2.82-.23.55.47.8 1.2.66 1.92l-2.02 10.1z"/><rect width="17" height="2" x="6" y="13" fill="#9c3" opacity=".5" rx="1"/><rect width="10" height="2" x="4" y="23" fill="#9c3" opacity=".55" rx="1"/><rect width="12" height="2" x="9" y="33" fill="#9c3" opacity=".5" rx="1"/></g></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>36BB0D00-B625-4D18-9BE9-18EDE4D29CF0</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic/2">
+            <path d="M37.5204947,19.5097292 L41.4071358,19.5097292 C43.06399,19.5097292 44.4071358,20.8528749 44.4071358,22.5097292 C44.4071358,23.2458649 44.1364786,23.9563057 43.6466756,24.5058408 L28.4171647,41.5926091 C27.6822167,42.4171849 26.4179729,42.4898426 25.5933971,41.7548946 C25.0637199,41.282791 24.8238255,40.565392 24.9629768,39.8696358 L27.0234759,29.5671402 L24,29.5671402 C22.3431458,29.5671402 21,28.2239944 21,26.5671402 C21,25.8565736 21.2522162,25.169074 21.7117291,24.6270844 L36.0573146,7.7066502 C36.7716234,6.86413212 38.033681,6.76019797 38.8761991,7.47450678 C39.4309057,7.94480158 39.6866132,8.67913637 39.5439899,9.39225298 L37.5204947,19.5097292 Z" id="Combined-Shape" stroke="#99CC33" stroke-width="2"></path>
+            <rect id="Rectangle-13" fill="#99CC33" opacity="0.5" x="6" y="13" width="17" height="2" rx="1"></rect>
+            <rect id="Rectangle-13-Copy" fill="#99CC33" opacity="0.550000012" x="4" y="23" width="10" height="2" rx="1"></rect>
+            <rect id="Rectangle-13-Copy-2" fill="#99CC33" opacity="0.5" x="9" y="33" width="12" height="2" rx="1"></rect>
+        </g>
+    </g>
+</svg>
