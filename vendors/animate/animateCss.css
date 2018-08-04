@@ -491,28 +491,18 @@
 }
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
-
-@-webkit-keyframes wobble {
-    from {
-        left: 220px;
-        transform: rotate(0deg);
-    }
-
-    to {
-        left: 190px;
-        transform: rotate(-20deg);
-    }
-}
 /*TODO rename animation */
 @keyframes wobble {
     from {
-        left: 220px;
+        top: 38px;
+        right: 70px;
         transform: rotate(0deg);
         opacity: 0;
     }
 
     to {
-        left: 190px;
+        top: 18px;
+        right: 130px;
         transform: rotate(-20deg);
         opacity: 1;
     }
@@ -520,13 +510,15 @@
 
 @keyframes wobble2 {
     from {
-        left: 220px;;
+        top: 10px;
+        right: 70px;;
         transform: rotate(0deg);
         opacity: 0;
     }
 
     to {
-        left: 240px;
+        top: -7px;
+        right: 0;
         transform: rotate(20deg);
         opacity: 1;
     }
@@ -534,13 +526,15 @@
 
 @keyframes wobble3 {
     from {
-        left: 220px;
+        top: 85px;
+        right: 89px;
         transform: rotate(0deg);
         opacity: 0;
     }
 
     to {
-        left: 100px;
+        top: 107px;
+        right: 226px;
         transform: rotate(-35deg);
         opacity: 1;
     }
@@ -548,14 +542,14 @@
 
 @keyframes wobble4 {
     from {
-        left: 220px;
+        right: 89px;
         transform: rotate(0deg);
         opacity: 0;
     }
 
     to {
-        left: 310px;
-        transform: rotate(40deg);
+        right: -81px;
+        transform: rotate(35deg);
         opacity: 1;
     }
 }
@@ -3449,7 +3443,7 @@ animation-name: wobble4;
     }
 
     to {
-        visibility: hidden;
+        opacity: 0;
         -webkit-transform: translate3d(0, 100%, 0);
         transform: translate3d(0, 100%, 0);
     }

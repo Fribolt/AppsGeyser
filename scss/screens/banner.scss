@@ -1,46 +1,60 @@
 section.banner {
-  min-height: 100vh;
   overflow: hidden;
 
-  .title {
-    margin-top: 162px;
-    text-align: left;
-    font-weight: 500;
-    font-size: 40px;
+  > .container {
+    min-height: calc(100vh - 73px);
   }
 
-  .subtitle {
-    margin: 24px 0 33px 0;
-    font-weight: 300;
-    line-height: 32px;
-    font-size: 24px;
+  .title-container {
+    position: absolute;
+    top: 50%;
+    max-width: 420px;
+    transform: translateY(-60%);
+
+    .title {
+      text-align: left;
+      font-weight: 500;
+      font-size: 40px;
+    }
+
+    .subtitle {
+      margin: 24px 0 33px 0;
+      font-weight: 300;
+      line-height: 32px;
+      font-size: 24px;
+    }
+
+    .btn-create-app {
+      padding: 17px 23px 17px 22px;
+    }
   }
 
-  .btn-create-app {
-    padding: 17px 23px 17px 22px;
+  .banner-container {
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    width: 380px;
+    height: 565px;
+    transform: translateY(-50%);
   }
 
   .banner-bg {
-    position: absolute;
-    top: 75px;
-    right: 100px;
-    width: 370px;
-    height: 715px;
+    position: relative;
+    width: 330px;
+    height: 630px;
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: center;
     background-image: url("../images/banner/banner-bg.png");
     z-index: 3;
-    background-size: 329px;
+    background-size: 337px;
 
     &-2 {
       position: absolute;
-      top: 77px;
-      left: 220px;
-      width: 370px;
-      height: 715px;
+      top: 38px;
+      right: 70px;
+      width: 285px;
+      height: 525px;
       z-index: 2;
-      background-repeat: no-repeat;
-      background-position: 0 0;
       background-image: url("../images/banner/banner-bg-2.png");
       background-size: 300px;
       animation-fill-mode: forwards;
@@ -49,13 +63,11 @@ section.banner {
 
     &-3 {
       position: absolute;
-      top: 77px;
-      left: 220px;
-      width: 370px;
-      height: 715px;
+      top: 10px;
+      right: 70px;
+      width: 285px;
+      height: 525px;
       z-index: 2;
-      background-repeat: no-repeat;
-      background-position: 0 0;
       background-image: url("../images/banner/banner-bg-3.png");
       background-size: 300px;
       animation-fill-mode: forwards;
@@ -64,32 +76,28 @@ section.banner {
 
     &-4 {
       position: absolute;
-      top: 152px;
-      left: 220px;
-      width: 370px;
-      height: 715px;
-      background-repeat: no-repeat;
-      background-position: 0 0;
+      top: 85px;
+      right: 89px;
+      width: 285px;
+      height: 525px;
       background-image: url("../images/banner/banner-bg-4.png");
       background-size: 280px;
       animation-fill-mode: forwards;
-      opacity: 0;
       z-index: 1;
+      opacity: 0;
     }
 
     &-5 {
       position: absolute;
-      top: 152px;
-      left: 220px;
-      width: 370px;
-      height: 715px;
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      background-image: url(../images/banner/banner-bg-5.png);
+      top: 85px;
+      right: 89px;
+      width: 285px;
+      height: 525px;
+      background-image: url("../images/banner/banner-bg-5.png");
       background-size: 282px;
       animation-fill-mode: forwards;
-      opacity: 0;
       z-index: 2;
+      opacity: 0;
     }
   }
 }
