@@ -336,6 +336,10 @@ section.banner {
         text-align: center;
         transform: none;
         height: 500px; } }
+    @media (max-width: 768px) {
+      section.banner .banner-container {
+        width: 180px;
+        height: 250px; } }
   section.banner .banner-bg {
     position: relative;
     width: 330px;
@@ -351,6 +355,10 @@ section.banner {
     @media (max-width: 992px) {
       section.banner .banner-bg {
         height: 520px; } }
+    @media (max-width: 768px) {
+      section.banner .banner-bg {
+        width: 140px;
+        height: 250px; } }
     section.banner .banner-bg-rear {
       position: absolute;
       width: 285px;
@@ -363,6 +371,10 @@ section.banner {
       @media (max-width: 992px) {
         section.banner .banner-bg-rear {
           height: 422px; } }
+      @media (max-width: 768px) {
+        section.banner .banner-bg-rear {
+          width: 115px;
+          height: 200px; } }
     section.banner .banner-bg-2 {
       top: 38px;
       right: 70px;

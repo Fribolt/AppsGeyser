@@ -89,6 +89,8 @@ section.banner {
       height: 500px;
     }
     @media (max-width: $sm) {
+      width: 180px;
+      height: 250px;
     }
   }
 
@@ -107,6 +109,10 @@ section.banner {
     @media (max-width: $md) {
       height: 520px;
     }
+    @media (max-width: $sm) {
+      width: 140px;
+      height: 250px;
+    }
 
     &-rear {
       position: absolute;
@@ -119,6 +125,10 @@ section.banner {
       }
       @media (max-width: $md) {
         height: 422px;
+      }
+      @media (max-width: $sm) {
+        width: 115px;
+        height: 200px;
       }
     }
 
