@@ -3,6 +3,14 @@ section.banner {
 
   > .container {
     min-height: calc(100vh - 73px);
+    @media (max-width: $md) {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: flex-end;
+      min-height: 100vh;
+      padding-top: 83px;
+    }
   }
 
   .title-container {
@@ -10,11 +18,31 @@ section.banner {
     top: 50%;
     max-width: 420px;
     transform: translateY(-60%);
+    @media (max-width: $lg) {
+      max-width: 340px;
+    }
+    @media (max-width: $md) {
+      position: relative;
+      top: auto;
+      transform: none;
+      text-align: center;
+    }
+    @media (max-width: $sm) {
+
+    }
 
     .title {
       text-align: left;
       font-weight: 500;
       font-size: 40px;
+      @media (max-width: $lg) {
+        font-size: 30px;
+      }
+      @media (max-width: $md) {
+        text-align: center;
+        font-size: 20px;
+      }
+
     }
 
     .subtitle {
@@ -22,6 +50,12 @@ section.banner {
       font-weight: 300;
       line-height: 32px;
       font-size: 24px;
+      @media (max-width: $lg) {
+        font-size: 22px;
+      }
+      @media (max-width: $md) {
+        font-size: 18px;
+      }
     }
 
     .btn-create-app {
@@ -31,11 +65,31 @@ section.banner {
 
   .banner-container {
     position: absolute;
-    right: 100px;
     top: 50%;
+    right: 155px;
     width: 380px;
     height: 565px;
     transform: translateY(-50%);
+    @media (min-width: $xl) {
+      right: 100px;
+    }
+    @media (max-width: $lg) {
+      width: 320px;
+    }
+    @media (min-width: $lg) {
+      right: 155px;
+    }
+    @media (max-width: $md) {
+      position: relative;
+      top: auto;
+      right: auto;
+      max-width: 500px;
+      text-align: center;
+      transform: none;
+      height: 500px;
+    }
+    @media (max-width: $sm) {
+    }
   }
 
   .banner-bg {
@@ -46,58 +100,61 @@ section.banner {
     background-position: center;
     background-image: url("../images/banner/banner-bg.png");
     z-index: 3;
-    background-size: 337px;
+    background-size: 100%;
+    @media (max-width: $lg) {
+      width: 270px;
+    }
+    @media (max-width: $md) {
+      height: 520px;
+    }
 
-    &-2 {
+    &-rear {
       position: absolute;
-      top: 38px;
-      right: 70px;
       width: 285px;
       height: 525px;
+      opacity: 0;
+      animation-fill-mode: forwards;
+      @media (max-width: $lg) {
+        width: 220px;
+      }
+      @media (max-width: $md) {
+        height: 422px;
+      }
+    }
+
+    &-2 {
+      top: 38px;
+      right: 70px;
       z-index: 2;
       background-image: url("../images/banner/banner-bg-2.png");
-      background-size: 300px;
-      animation-fill-mode: forwards;
-      opacity: 0;
+      background-size: 100%;
     }
 
     &-3 {
       position: absolute;
       top: 10px;
       right: 70px;
-      width: 285px;
-      height: 525px;
       z-index: 2;
       background-image: url("../images/banner/banner-bg-3.png");
-      background-size: 300px;
-      animation-fill-mode: forwards;
-      opacity: 0;
+      background-size: 100%;
     }
 
     &-4 {
       position: absolute;
       top: 85px;
       right: 89px;
-      width: 285px;
-      height: 525px;
       background-image: url("../images/banner/banner-bg-4.png");
-      background-size: 280px;
-      animation-fill-mode: forwards;
+      background-size: 100%;
       z-index: 1;
-      opacity: 0;
     }
 
     &-5 {
       position: absolute;
       top: 85px;
       right: 89px;
-      width: 285px;
-      height: 525px;
       background-image: url("../images/banner/banner-bg-5.png");
-      background-size: 282px;
-      animation-fill-mode: forwards;
+      background-size: 100%;
       z-index: 2;
-      opacity: 0;
     }
   }
 }

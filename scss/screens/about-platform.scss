@@ -18,6 +18,10 @@
     border-radius: 8px;
     background: #fff;
     box-shadow: 0 0 10px 0 rgba(230, 230, 230, 0.5);
+    @media (max-width: $md) {
+      flex-direction: column;
+      padding: 24px 40px;
+    }
 
 
     &-item {
@@ -26,6 +30,14 @@
       &:nth-child(2) {
         border-right: 1px solid #e5e5e5;
         border-left: 1px solid #e5e5e5;
+        @media (max-width: $md) {
+          margin: 20px 0;
+          padding: 20px 0;
+          border-right: none;
+          border-left: none;
+          border-top: 1px solid #e5e5e5;
+          border-bottom: 1px solid #e5e5e5;
+        }
       }
 
       p {
@@ -36,11 +48,18 @@
         margin-bottom: 6px;
         font-size: 40px;
         font-weight: 500;
+        @media (max-width: $lg) {
+          font-size: 34px;
+        }
+
       }
 
       p.subtitle {
         font-size: 18px;
         color: $color-button;
+        @media (max-width: $lg) {
+          font-size: 14px;
+        }
       }
     }
   }

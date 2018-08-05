@@ -11,7 +11,7 @@ clock = $('#clock').FlipClock({
     }
 });
 
-var target = "2018-08-05T00:00:00";
+var target = "2018-08-10T00:00:00";
 var targetDate = new Date(target);
 var nowDate = Date.now();
 var time = (targetDate - nowDate) / 1000;

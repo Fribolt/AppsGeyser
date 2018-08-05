@@ -58,12 +58,25 @@
       top: 30%;
       left: 100px;
       background-image: url("../images/right-hand.svg");
+      @media (max-width: $lg) {
+        left: 60px;
+      }
+      @media (max-width: $md) {
+        left: 170px;
+      }
     }
 
     .right-hand {
       top: 40%;
       left: 300px;
       background-image: url("../images/left-hand.svg");
+      @media (max-width: $lg) {
+        left: 250px;
+      }
+      @media (max-width: $md) {
+        left: 350px;
+      }
+
     }
   }
 

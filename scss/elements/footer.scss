@@ -1,5 +1,4 @@
 .footer {
-  margin-top: 80px;
 
   a {
     color: $color-text;
@@ -15,6 +14,9 @@
     font-size: 14px;
     background-color: #fff;
     box-shadow: 0 -1px 0 0 rgba(228, 228, 228, 0.5);
+    @media (max-width: $sm) {
+      padding: 20px 0;
+    }
 
     .navigation-item {
       display: flex;
@@ -34,7 +36,17 @@
     }
   }
 
-  .social-network {
+  .navigation-item.social-network {
+    @media (max-width: $md) {
+      flex-flow: row wrap;
+      margin: 30px 0 0 0;
+    }
+
+    h4 {
+      @media (max-width: $md) {
+        flex-basis: 100%;
+      }
+    }
 
     .flex-container {
       display: flex;
@@ -75,9 +87,19 @@
     justify-content: center;
     align-items: center;
     margin-top: 35px;
+    @media (max-width: $md) {
+      flex-flow: column wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      max-width: 655px;
+      max-height: 170px;
+    }
 
     a {
       margin: 0 50px;
+      @media (max-width: $md) {
+        margin: 0 20px 20px 0;
+      }
     }
   }
 
@@ -85,5 +107,8 @@
     margin: 30px 0;
     text-align: center;
     color: #35344c;
+    @media (max-width: $md) {
+      text-align: left;
+    }
   }
 }

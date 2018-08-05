@@ -25,12 +25,12 @@
 
   &-login {
     position: relative;
+    display: flex;
+    align-items: center;
     padding: 0;
     background-color: #fafafa;
 
     .icon {
-      display: inline-block;
-      position: absolute;
       width: 25px;
       height: 20px;
       margin-left: 5px;

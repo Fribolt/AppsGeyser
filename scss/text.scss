@@ -16,6 +16,10 @@ p {
   font-weight: 700;
   line-height: 50px;
   font-size: 32px;
+  @media (max-width: $lg) {
+    line-height: 44px;
+    font-size: 28px;
+  }
 }
 
 .subtitle {
