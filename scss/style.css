@@ -851,8 +851,24 @@ section.banner {
   .about-platform .title {
     margin-bottom: 20px; }
   .about-platform .map {
+    display: block;
     width: 100%;
     height: 522px; }
+    @media (max-width: 768px) {
+      .about-platform .map {
+        display: none; } }
+    .about-platform .map-mobile {
+      display: none;
+      width: 100%;
+      height: 400px;
+      background: url("../images/map.png") center no-repeat;
+      background-size: 110%; }
+      @media (max-width: 768px) {
+        .about-platform .map-mobile {
+          display: block; } }
+      @media (max-width: 576px) {
+        .about-platform .map-mobile {
+          height: 250px; } }
   .about-platform .calculate {
     display: flex;
     justify-content: center;
