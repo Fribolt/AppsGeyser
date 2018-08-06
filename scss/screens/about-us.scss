@@ -41,10 +41,11 @@
 
   .phone {
     position: relative;
-    width: 636px;
+    //width: 636px;
+    width: 100%;
     min-height: 401px;
     margin: auto;
-    background: url("../images/about-us/phone.svg") center no-repeat;
+    //background: url("../images/about-us/phone.svg") center no-repeat;
     background-size: 90%;
   }
 
@@ -114,8 +115,9 @@
 
   #animate-about-us {
     position: absolute;
-    left: -337px;
     top: -122px;
-    width: 1283px;
+    //left: -337px;
+    //width: 1283px;
+    width: 100%;
   }
 }

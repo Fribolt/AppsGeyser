@@ -572,18 +572,19 @@
         opacity: 1;
     }
 }
+
 @media (max-width: 768px) {
     @keyframes wobble3 {
         from {
-            top: 85px;
-            right: 89px;
+            top: 39px;
+            right: 49px;
             transform: rotate(0deg);
             opacity: 0;
         }
 
         to {
-            top: 107px;
-            right: 180px;
+            top: 67px;
+            right: 110px;
             transform: rotate(-35deg);
             opacity: 1;
         }
@@ -601,6 +602,24 @@
         right: -81px;
         transform: rotate(35deg);
         opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    @keyframes wobble4 {
+        from {
+            top: 42px;
+            right: 42px;
+            transform: rotate(0deg);
+            opacity: 0;
+        }
+
+        to {
+            top: 47px;
+            right: -21px;
+            transform: rotate(35deg);
+            opacity: 1;
+        }
     }
 }
 

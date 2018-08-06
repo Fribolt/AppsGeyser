@@ -1,6 +1,35 @@
 .benefits {
   text-align: center;
   padding: 120px 0;
+  
+  @media (max-width: $sm) {
+    .order {
+      &_1 {
+        order: 1;
+      }
+      &_2 {
+        order: 2;
+      }
+      &_3 {
+        order: 3;
+      }
+      &_4 {
+        order: 4;
+      }
+      &_5 {
+        order: 5;
+      }
+      &_6 {
+        order: 6;
+      }
+      &_7 {
+        order: 7;
+      }
+      &_8 {
+        order: 8;
+      }
+    }
+  }
 
   .title {
     margin-bottom: 100px;
@@ -9,6 +38,9 @@
 
   .subtitle {
     margin-bottom: 14px;
+    @media (max-width: $sm) {
+      line-height: 24px;
+    }
   }
 
   p {
