@@ -52,6 +52,10 @@
       width: 140px;
       height: 150px;
       background: center no-repeat;
+      @media (max-width: $sm) {
+        width: 120px;
+        background-size: 100%;
+      }
     }
 
     .subscription {
@@ -103,6 +107,9 @@
       border-radius: 10px;
       background-color: #ffffff;
       box-shadow: 0 0 10px 0 rgba(230, 230, 230, 0.5);
+      @media (max-width: $md) {
+        padding: 25px 6px;
+      }
     }
   }
 

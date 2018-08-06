@@ -16,6 +16,17 @@
     margin-bottom: 50px;
     overflow: hidden;
 
+    .desktop-slide {
+      @media (max-width: $sm) {
+        display: none;
+      }
+    }
+    .mobile-slide {
+      @media (min-width: $sm) {
+        //display: none;
+      }
+    }
+
     .slide {
       display: flex;
 
