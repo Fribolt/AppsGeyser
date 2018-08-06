@@ -51,9 +51,6 @@
             background-image: linear-gradient(to left, #ffffff, #000000 50%, #ffffff);
             transform: translateX(-50%);
             opacity: .2;
-            @media (max-width: $sm) {
-              width: 280px;
-            }
           }
         }
       }
@@ -62,24 +59,19 @@
 
   .slider {
     position: relative;
-    left: -282px;
+    //left: -282px;
     display: flex;
     width: 5000px;
-    margin: 120px 0 0 281px;
+    margin: 120px 0 0 0;
     text-align: left;
     transition: left 0.5s;
 
     &-container {
-      overflow: hidden;
-      @media (max-width: $md) {
-        display: none;
-      }
-
       .indicators {
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        width: 140px;
+        width: 95px;
         margin: 70px auto 0 auto;
 
         .indicator {
