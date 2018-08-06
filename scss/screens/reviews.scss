@@ -51,6 +51,9 @@
             background-image: linear-gradient(to left, #ffffff, #000000 50%, #ffffff);
             transform: translateX(-50%);
             opacity: .2;
+            @media (max-width: $sm) {
+              width: 280px;
+            }
           }
         }
       }
@@ -68,6 +71,9 @@
 
     &-container {
       overflow: hidden;
+      @media (max-width: $md) {
+        display: none;
+      }
 
       .indicators {
         display: flex;

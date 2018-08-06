@@ -406,6 +406,97 @@
             </div>
 
             <div class="col-12">
+                <div id="carouselExampleIndicators-mobile" class="carousel carousel-mobile slide" data-interval="false">
+                    <div class="button-container">
+                        <a class="button-prev fadeIn wow" data-wow-delay="2s" href="#carouselExampleIndicators-mobile" role="button" data-slide="prev"></a>
+                        <a class="button-next fadeIn wow" data-wow-delay="2s" href="#carouselExampleIndicators-mobile" role="button" data-slide="next"></a>
+                    </div>
+                    <div class="carousel-inner slider">
+                        <div class="carousel-item">
+                            <div class="slide no-gutters">
+                                <div class="template col">
+                                    <div class="template-bg website"></div>
+                                    <h4 class="template-title">1Website</h4>
+                                </div>
+                                <div class="template col">
+                                    <div class="template-bg messenger"></div>
+                                    <h4 class="template-title">1Messenger</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <div class="slide no-gutters">
+                                <div class="template col zoomIn wow" data-wow-delay="1.5s">
+                                    <div class="template-bg website"></div>
+                                    <h4 class="template-title">2Website</h4>
+                                </div>
+                                <div class="template col zoomIn wow" data-wow-delay="2s">
+                                    <div class="template-bg messenger"></div>
+                                    <h4 class="template-title">2Messenger</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="slide no-gutters">
+                                <div class="template col">
+                                    <div class="template-bg website"></div>
+                                    <h4 class="template-title">3Website</h4>
+                                </div>
+                                <div class="template col">
+                                    <div class="template-bg messenger"></div>
+                                    <h4 class="template-title">3Messenger</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="slide no-gutters">
+                                <div class="template col">
+                                    <div class="template-bg browser"></div>
+                                    <h4 class="template-title">4Browser</h4>
+                                </div>
+                                <div class="template col">
+                                    <div class="template-bg media-player"></div>
+                                    <h4 class="template-title">4Media Player</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="slide no-gutters">
+                                <div class="template col">
+                                    <div class="template-bg browser"></div>
+                                    <h4 class="template-title">5Browser</h4>
+                                </div>
+                                <div class="template col">
+                                    <div class="template-bg media-player"></div>
+                                    <h4 class="template-title">5Media Player</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="slide no-gutters">
+                                <div class="template col">
+                                    <div class="template-bg website"></div>
+                                    <h4 class="template-title">6Website</h4>
+                                </div>
+                                <div class="template col">
+                                    <div class="template-bg messenger"></div>
+                                    <h4 class="template-title">6Messenger</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ol class="carousel-indicators indicators indicators-mobile fadeIn wow" data-wow-delay="3.5s">
+                        <li data-target="#carouselExampleIndicators-mobile" data-slide-to="0" class="indicator"></li>
+                        <li data-target="#carouselExampleIndicators-mobile" data-slide-to="1" class="indicator active"></li>
+                        <li data-target="#carouselExampleIndicators-mobile" data-slide-to="2" class="indicator"></li>
+                        <li data-target="#carouselExampleIndicators-mobile" data-slide-to="3" class="indicator"></li>
+                        <li data-target="#carouselExampleIndicators-mobile" data-slide-to="4" class="indicator active"></li>
+                        <li data-target="#carouselExampleIndicators-mobile" data-slide-to="5" class="indicator"></li>
+                    </ol>
+                 </div>
+            </div>
+
+            <div class="col-12">
                 <button class="btn btn-create-app fadeIn wow" data-wow-delay="1s">Create Now for FREE</button>
             </div>
         </div>
@@ -480,7 +571,7 @@
     </div>
 </footer>
 
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" crossorigin="anonymous"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
@@ -493,10 +584,6 @@
 <script>
     var logo = document.getElementById('logo'),
         nav = document.getElementById('mobile-navigation');
-
-    function showMenu(element) {
-        element.classList.toggle('active');
-    }
 
     logo.addEventListener('click',  function () {
         nav.classList.toggle('active');

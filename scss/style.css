@@ -212,7 +212,8 @@ a:hover {
       text-transform: uppercase; }
     .footer .footer-navigation .navigation-item a {
       margin-bottom: 24px;
-      font-weight: 500; }
+      font-weight: 500;
+      word-wrap: break-word; }
 @media (max-width: 992px) {
   .footer .navigation-item.social-network {
     flex-flow: row wrap;
@@ -768,6 +769,9 @@ section.banner {
             background-image: linear-gradient(to left, #ffffff, #000000 50%, #ffffff);
             transform: translateX(-50%);
             opacity: .2; }
+            @media (max-width: 768px) {
+              .reviews .comments .comment .star-container:before {
+                width: 280px; } }
   .reviews .slider {
     position: relative;
     left: -282px;
@@ -778,6 +782,9 @@ section.banner {
     transition: left 0.5s; }
     .reviews .slider-container {
       overflow: hidden; }
+      @media (max-width: 992px) {
+        .reviews .slider-container {
+          display: none; } }
       .reviews .slider-container .indicators {
         display: flex;
         align-items: center;
@@ -897,6 +904,16 @@ section.banner {
     font-weight: 500; }
   .portfolio .subtitle {
     font-weight: 300; }
+  .portfolio .carousel {
+    display: block; }
+    @media (max-width: 992px) {
+      .portfolio .carousel {
+        display: none; } }
+    .portfolio .carousel.carousel-mobile {
+      display: none; }
+      @media (max-width: 992px) {
+        .portfolio .carousel.carousel-mobile {
+          display: block; } }
   .portfolio .slider {
     position: relative;
     margin-bottom: 50px;
@@ -918,7 +935,7 @@ section.banner {
           height: 510px;
           background: center no-repeat;
           background-size: 100%; }
-          @media (max-width: 992px) {
+          @media (max-width: 576px) {
             .portfolio .slider .slide .template-bg {
               height: 320px; } }
           .portfolio .slider .slide .template-bg.website {
@@ -968,6 +985,15 @@ section.banner {
     justify-content: center;
     width: 140px;
     margin: 60px auto 50px auto; }
+    @media (max-width: 992px) {
+      .portfolio .indicators {
+        display: none; } }
+    .portfolio .indicators-mobile {
+      display: none; }
+      @media (max-width: 992px) {
+        .portfolio .indicators-mobile {
+          display: flex;
+          width: 200px; } }
     .portfolio .indicators .indicator {
       width: 8px;
       height: 8px;
