@@ -422,93 +422,65 @@ section.banner {
 .about-us {
   display: flex;
   flex-direction: column;
-  font-size: 18px;
-  margin-bottom: 200px; }
+  padding: 60px 0 100px 0;
+  font-size: 18px; }
   .about-us .title {
     max-width: 930px;
     margin: 0 auto 120px auto; }
+    @media (max-width: 992px) {
+      .about-us .title {
+        margin: 0 auto 40px auto; } }
   .about-us .text-container {
-    position: relative; }
-  .about-us p {
-    position: absolute;
-    max-width: 270px; }
-    .about-us p.top-left {
-      top: 30px;
-      left: 0; }
-    .about-us p.top-right {
-      top: -40px;
-      left: 878px; }
-    .about-us p.bottom-left {
-      bottom: -350px;
-      left: 0; }
-    .about-us p.bottom-right {
-      max-width: 310px;
-      bottom: -390px;
-      left: 830px; }
+    display: none; }
+    @media (max-width: 992px) {
+      .about-us .text-container {
+        display: block; } }
+    .about-us .text-container p {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 40px;
+      text-align: left; }
+    .about-us .text-container .icon:before {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      left: 0;
+      top: 5px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%; }
+    .about-us .text-container .icon-green:before {
+      background-color: #99cc33; }
+    .about-us .text-container .icon-pink:before {
+      background-color: #d32992; }
+    .about-us .text-container .icon-orange:before {
+      background-color: #fec502; }
+    .about-us .text-container .icon-dark-green:before {
+      background-color: #60a510; }
   .about-us .phone {
     position: relative;
     width: 100%;
     min-height: 401px;
     margin: auto;
     background-size: 90%; }
-  .about-us .message {
-    position: absolute;
-    left: 153px;
-    top: -22px;
-    width: 134px;
-    height: 141px;
-    background: url("../images/about-us/message.svg") center no-repeat;
-    background-size: 100%; }
-  .about-us .paint-can {
-    position: absolute;
-    bottom: 65px;
-    left: 368px;
-    width: 130px;
-    height: 108px;
-    background: url("../images/about-us/panit-can.svg") top right no-repeat, url("../images/about-us/brush.svg") bottom left no-repeat; }
-  .about-us .money {
-    position: absolute;
-    top: 116px;
-    left: 62px;
-    width: 54px;
-    height: 90px;
-    background: url("../images/about-us/money.svg") center no-repeat;
-    background-size: 100%;
-    z-index: 1; }
-  .about-us .gift-box {
-    position: absolute;
-    top: 183px;
-    right: 23px;
-    width: 74px;
-    height: 93px;
-    background: url("../images/about-us/gift-box.svg") center no-repeat;
-    background-size: 100%;
-    z-index: 1; }
-  .about-us .clock {
-    position: absolute;
-    top: 352px;
-    left: 68px;
-    width: 62px;
-    height: 51px;
-    background: url("../images/about-us/clock.svg") center no-repeat;
-    background-size: 100%;
-    z-index: 1; }
-  .about-us .book {
-    position: absolute;
-    bottom: -12px;
-    left: 273px;
-    width: 115px;
-    height: 78px;
-    background: url("../images/about-us/book.svg") center no-repeat;
-    background-size: 100%;
-    z-index: 1; }
+    @media (max-width: 992px) {
+      .about-us .phone {
+        display: none; } }
+  .about-us .banner-mobile {
+    display: none; }
+    @media (max-width: 992px) {
+      .about-us .banner-mobile {
+        display: block;
+        height: 500px;
+        background: url("../images/banner-mobile.svg") center no-repeat;
+        background-size: 80%; } }
   .about-us #animate-about-us {
     position: absolute;
     top: -122px;
     width: 100%; }
 
 .steps {
-  padding: 100px 0;
+  padding: 0 0 100px 0;
   text-align: center;
   font-size: 18px; }
   @media (max-width: 992px) {
@@ -720,6 +692,9 @@ section.banner {
         .referral .content .left-hand {
           left: 170px; } }
       @media (max-width: 768px) {
+        .referral .content .left-hand {
+          left: 20%; } }
+      @media (max-width: 576px) {
         .referral .content .left-hand {
           left: 10%; } }
     .referral .content .right-hand {

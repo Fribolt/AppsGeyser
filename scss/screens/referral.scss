@@ -78,6 +78,9 @@
         left: 170px;
       }
       @media (max-width: $sm) {
+        left: 20%;
+      }
+      @media (max-width: $xs) {
         left: 10%;
       }
     }
