@@ -32,7 +32,9 @@
       a {
         margin-bottom: 24px;
         font-weight: 500;
-        word-wrap: break-word;
+        @media (max-width: $xs) {
+          word-wrap: break-word;
+        }
       }
     }
   }

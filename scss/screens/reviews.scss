@@ -51,6 +51,9 @@
             background-image: linear-gradient(to left, #ffffff, #000000 50%, #ffffff);
             transform: translateX(-50%);
             opacity: .2;
+            @media (max-width: $sm) {
+              width: 260px;
+            }
           }
         }
       }
@@ -67,6 +70,8 @@
     transition: left 0.5s;
 
     &-container {
+      overflow: hidden;
+
       .indicators {
         display: flex;
         align-items: center;
@@ -154,5 +159,9 @@
     .slide[data-index='3'] .icon {
       background-image: url('../images/slide-item-2.png');
     }
+  }
+
+  .btn {
+    margin-top: 80px;
   }
 }

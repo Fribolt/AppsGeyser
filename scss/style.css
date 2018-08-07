@@ -104,7 +104,7 @@ a:hover {
     padding: 5px 0;
     color: transparent;
     background: url("../images/logo.png") center no-repeat;
-    background-size: 110%; }
+    background-size: 100%; }
     @media (max-width: 992px) {
       .header .logo {
         display: none; } }
@@ -212,8 +212,10 @@ a:hover {
       text-transform: uppercase; }
     .footer .footer-navigation .navigation-item a {
       margin-bottom: 24px;
-      font-weight: 500;
-      word-wrap: break-word; }
+      font-weight: 500; }
+      @media (max-width: 576px) {
+        .footer .footer-navigation .navigation-item a {
+          word-wrap: break-word; } }
 @media (max-width: 992px) {
   .footer .navigation-item.social-network {
     flex-flow: row wrap;
@@ -475,6 +477,8 @@ section.banner {
         height: 500px;
         background: url("../images/banner-mobile.svg") center no-repeat;
         background-size: 80%; } }
+  .about-us .btn {
+    margin-top: 80px; }
   .about-us #animate-about-us {
     position: absolute;
     top: -122px;
@@ -722,6 +726,8 @@ section.banner {
       @media (max-width: 992px) {
         .referral p.business-offer {
           padding: 25px 6px; } }
+  .referral .btn {
+    margin-bottom: 80px; }
   .referral .text-pink {
     color: #a62073; }
   .referral .text-green {
@@ -769,6 +775,9 @@ section.banner {
             background-image: linear-gradient(to left, #ffffff, #000000 50%, #ffffff);
             transform: translateX(-50%);
             opacity: .2; }
+            @media (max-width: 768px) {
+              .reviews .comments .comment .star-container:before {
+                width: 260px; } }
   .reviews .slider {
     position: relative;
     display: flex;
@@ -776,23 +785,25 @@ section.banner {
     margin: 120px 0 0 0;
     text-align: left;
     transition: left 0.5s; }
-    .reviews .slider-container .indicators {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      width: 95px;
-      margin: 70px auto 0 auto; }
-      .reviews .slider-container .indicators .indicator {
-        width: 8px;
-        height: 8px;
-        margin: 0 10px;
-        border-radius: 50%;
-        background-color: #d8d8d8;
-        cursor: pointer; }
-        .reviews .slider-container .indicators .indicator.active {
-          width: 14px;
-          height: 14px;
-          background-color: #99cc33; }
+    .reviews .slider-container {
+      overflow: hidden; }
+      .reviews .slider-container .indicators {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 95px;
+        margin: 70px auto 0 auto; }
+        .reviews .slider-container .indicators .indicator {
+          width: 8px;
+          height: 8px;
+          margin: 0 10px;
+          border-radius: 50%;
+          background-color: #d8d8d8;
+          cursor: pointer; }
+          .reviews .slider-container .indicators .indicator.active {
+            width: 14px;
+            height: 14px;
+            background-color: #99cc33; }
     .reviews .slider .slide {
       position: relative;
       width: 280px; }
@@ -835,6 +846,8 @@ section.banner {
       background-image: url("../images/slide-item-2.png"); }
     .reviews .slider .slide[data-index='3'] .icon {
       background-image: url("../images/slide-item-2.png"); }
+  .reviews .btn {
+    margin-top: 80px; }
 
 .about-platform {
   margin-top: 100px;
@@ -902,6 +915,8 @@ section.banner {
         @media (max-width: 1200px) {
           .about-platform .calculate-item p.subtitle {
             font-size: 14px; } }
+  .about-platform .btn {
+    margin-top: 80px; }
 
 .portfolio {
   padding: 120px 0 80px 0;
