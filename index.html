@@ -36,7 +36,19 @@
             </div>
             <div class="col-lg-3 col-md-5">
                 <div class="options-menu">
-                    <button class="btn btn-language">RU</button>
+                    <button id="btn-language" class="btn btn-language">RU
+                        <nav id="language-menu-desktop" class="language-menu mobile-navigation header-navigation desktop">
+                            <div class="navigation-list desktop">
+                                <a href="" class="navigation-item">RU</a>
+                                <a href="" class="navigation-item">EN</a>
+                                <a href="" class="navigation-item">IT</a>
+                                <a href="" class="navigation-item">DN</a>
+                                <a href="" class="navigation-item">BH</a>
+                                <a href="" class="navigation-item">ES</a>
+                                <a href="" class="navigation-item">NR</a>
+                            </div>
+                        </nav>
+                    </button>
                     <button class="btn btn-create-app">Create App</button>
                     <button class="btn btn-login">
                         Login
@@ -47,7 +59,7 @@
         </div>
     </div>
     <nav id="mobile-navigation" class="mobile-navigation header-navigation">
-        <div class="container">
+        <div class="container navigation-list">
             <a href="" class="navigation-item">Start Now</a>
             <a href="" class="navigation-item">Gamemaker</a>
             <a href="" class="navigation-item">Showcase</a>
@@ -55,6 +67,19 @@
             <a href="" class="navigation-item">FAQ</a>
             <a href="" class="navigation-item">Blog</a>
             <a href="" class="navigation-item">Community</a>
+        </div>
+    </nav>
+    <nav id="language-menu" class="language-menu mobile-navigation header-navigation mobile">
+        <div id="btn-close" class="btn-close"></div>
+        <h4 class="title">Выберите язык</h4>
+        <div class="navigation-list">
+            <a href="" class="navigation-item">Русский</a>
+            <a href="" class="navigation-item">English</a>
+            <a href="" class="navigation-item">Italian</a>
+            <a href="" class="navigation-item">Dansk</a>
+            <a href="" class="navigation-item">Bahasa</a>
+            <a href="" class="navigation-item">Espanol</a>
+            <a href="" class="navigation-item">Norsk</a>
         </div>
     </nav>
 </header>
@@ -231,7 +256,7 @@
                 <p class="business-offer zoomIn wow" data-wow-delay="2.7s">If you are here for a business app, we offer those for free without any ads. Just a little gift for you. Consider adding a small app business to your existing one.</p>
             </div>
             <div class="col-12 text-center">
-                <button class="btn btn-create-app fadeIn wow text-center" data-wow-delay="3s">Create Now for FREE</button>
+                <button class="btn btn-create-app fadeIn wow text-center" data-wow-delay="2s">Create Now for FREE</button>
             </div>
         </div>
     </div>
@@ -501,7 +526,7 @@
                             </div>
                         </div>
                     </div>
-                    <ol class="carousel-indicators indicators indicators-mobile fadeIn wow" data-wow-delay="3.5s">
+                    <ol class="carousel-indicators indicators indicators-mobile fadeIn wow" data-wow-delay="2s">
                         <li data-target="#carouselExampleIndicators-mobile" data-slide-to="0" class="indicator"></li>
                         <li data-target="#carouselExampleIndicators-mobile" data-slide-to="1" class="indicator active"></li>
                         <li data-target="#carouselExampleIndicators-mobile" data-slide-to="2" class="indicator"></li>
@@ -599,10 +624,27 @@
 <script src="js/counter.min.js"></script>
 <script>
     var logo = document.getElementById('logo'),
-        nav = document.getElementById('mobile-navigation');
+        nav = document.getElementById('mobile-navigation'),
+        languageBtn = document.getElementById('btn-language'),
+        closeBtn = document.getElementById('btn-close'),
+        languageNav = document.getElementById('language-menu'),
+        languageNavDesktop = document.getElementById('language-menu-desktop');
+
+    function toggleMenu(element) {
+        element.classList.toggle('active');
+    }
 
     logo.addEventListener('click',  function () {
-        nav.classList.toggle('active');
+        toggleMenu(nav);
+    });
+
+    languageBtn.addEventListener('click',  function () {
+        toggleMenu(languageNav);
+        toggleMenu(languageNavDesktop);
+    });
+
+    closeBtn.addEventListener('click',  function () {
+        toggleMenu(languageNav);
     });
 
 </script>

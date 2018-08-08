@@ -61,12 +61,15 @@ if (scrolled > 530 && scrolled < 1200) {
 
 window.onscroll = function() {
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+    console.log(scrolled);
 
     if (scrolled > 530 && scrolled < 1900) {
         setTimeout(function () {
             lines.play();
         }, 1000);
-    } else if (scrolled > 900 && scrolled < 2200) {
+    }
+
+    if (scrolled > 900 && scrolled < 2200) {
 
         setTimeout(function () {
             noCash.play();

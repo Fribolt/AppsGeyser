@@ -99,7 +99,7 @@
     .slide {
       position: relative;
       width: 280px;
-      @media (max-width: $md) {
+      @media (max-width: $lg) {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -125,7 +125,7 @@
         background: center no-repeat;
         background-size: 100%;
         transform: translateY(-50%);
-        @media (max-width: $md) {
+        @media (max-width: $lg) {
           position: relative;
           left: auto;
           top: auto;
@@ -136,7 +136,7 @@
       p {
         font-size: 14px;
         padding-left: 80px;
-        @media (max-width: $md) {
+        @media (max-width: $lg) {
           padding-left: 0;
         }
 
