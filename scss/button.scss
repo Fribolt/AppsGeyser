@@ -9,6 +9,7 @@
   }
 
   &-language,
+  &-logout,
   &-login {
     box-shadow: none;
 
@@ -23,19 +24,26 @@
     background-color: #fafafa;
   }
 
-  &-login {
+  &-login,
+  &-logout {
     position: relative;
     display: flex;
     align-items: center;
     padding: 0;
     background-color: #fafafa;
+  }
 
+  .icon {
+    width: 25px;
+    height: 20px;
+    margin-left: 5px;
+    background: url(../images/login.svg) center no-repeat;
+    background-size: 100%;
+  }
+
+  &-logout {
     .icon {
-      width: 25px;
-      height: 20px;
-      margin-left: 5px;
-      background: url(../images/login.svg) center no-repeat;
-      background-size: 100%;
+      background: url(../images/logout.svg) center no-repeat;
     }
   }
 

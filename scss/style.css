@@ -45,26 +45,28 @@ a:hover {
   box-shadow: 0 10px 20px 0 rgba(96, 165, 16, 0.42); }
   .btn:focus {
     box-shadow: 0 10px 20px 0 rgba(96, 165, 16, 0.42); }
-  .btn-language, .btn-login {
+  .btn-language, .btn-logout, .btn-login {
     box-shadow: none; }
-    .btn-language:focus, .btn-login:focus {
+    .btn-language:focus, .btn-logout:focus, .btn-login:focus {
       box-shadow: none; }
   .btn-language {
     border: solid 1px #eeebeb;
     font-weight: 700;
     background-color: #fafafa; }
-  .btn-login {
+  .btn-login, .btn-logout {
     position: relative;
     display: flex;
     align-items: center;
     padding: 0;
     background-color: #fafafa; }
-    .btn-login .icon {
-      width: 25px;
-      height: 20px;
-      margin-left: 5px;
-      background: url(../images/login.svg) center no-repeat;
-      background-size: 100%; }
+  .btn .icon {
+    width: 25px;
+    height: 20px;
+    margin-left: 5px;
+    background: url(../images/login.svg) center no-repeat;
+    background-size: 100%; }
+  .btn-logout .icon {
+    background: url(../images/logout.svg) center no-repeat; }
   .btn-create-app {
     padding: 17px 35px;
     font-weight: 700;
@@ -174,7 +176,13 @@ a:hover {
       display: none; }
       @media (max-width: 992px) {
         .header .language-menu.mobile {
-          display: block; } }
+          display: block;
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          border: 0;
+          overflow-y: scroll; } }
     .header .language-menu.desktop {
       position: absolute;
       top: 40px;
@@ -214,15 +222,17 @@ a:hover {
         transform: rotate(-45deg); }
       .header .language-menu .btn-close:before {
         transform: rotate(45deg); }
-    .header .language-menu .navigation-list {
-      align-items: stretch; }
-      .header .language-menu .navigation-list :first-child {
+    .header .language-menu .navigation-container .navigation-list {
+      display: flex;
+      align-items: stretch;
+      flex-direction: column; }
+      .header .language-menu .navigation-container .navigation-list :first-child {
         box-shadow: none; }
-    .header .language-menu h4 {
+    .header .language-menu .navigation-container h4 {
       text-align: left;
       font-weight: 700;
       font-size: 20px; }
-    .header .language-menu a {
+    .header .language-menu .navigation-container a {
       margin: 0;
       padding-top: 20px;
       padding-bottom: 20px;
@@ -566,6 +576,7 @@ section.banner {
         padding: 0 31px; } }
     @media (max-width: 992px) {
       .steps-item {
+        min-height: auto;
         padding: 0 120px;
         margin: 30px 0; } }
     @media (max-width: 768px) {
