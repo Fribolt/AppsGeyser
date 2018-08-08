@@ -19,7 +19,7 @@ p {
 
 .title {
   text-align: center;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 50px;
   font-size: 32px; }
   @media (max-width: 1200px) {
@@ -29,7 +29,6 @@ p {
   @media (max-width: 768px) {
     .title {
       line-height: 38px;
-      font-weight: 500;
       font-size: 20px; } }
 
 .subtitle {
