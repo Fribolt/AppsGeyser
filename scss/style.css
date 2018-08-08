@@ -198,6 +198,7 @@ a:hover {
         align-items: center; }
         .header .language-menu.desktop .navigation-list a {
           padding: 6px 0;
+          margin: 0;
           box-shadow: none; }
       @media (max-width: 992px) {
         .header .language-menu.desktop {
