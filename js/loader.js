@@ -15,7 +15,7 @@ phone3.style.display = 'none';
 phone4.style.display = 'none';
 phone5.style.display = 'none';
 
-var hyeder = bodymovin.loadAnimation({
+var loaderAnimate = bodymovin.loadAnimation({
     container: loader,
     // path: 'animationJson/magic.json', // Required
     animationData: sykaAnimasia,
@@ -24,7 +24,7 @@ var hyeder = bodymovin.loadAnimation({
     autoplay: false, // Optional
     name: "Hello World" // Name for future reference. Optional.
 });
-hyeder.play();
+loaderAnimate.play();
 
 
 window.onload = function() {
