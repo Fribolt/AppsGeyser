@@ -41,7 +41,6 @@ var magic = bodymovin.loadAnimation({
     name: "Hello World" // Name for future reference. Optional.
 });
 var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-console.log(scrolled);
 if (scrolled > 530 && scrolled < 1200) {
     setTimeout(function () {
         lines.play();
@@ -61,7 +60,6 @@ if (scrolled > 530 && scrolled < 1200) {
 
 window.onscroll = function() {
     var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-    console.log(scrolled);
 
     if (scrolled > 530 && scrolled < 1900) {
         setTimeout(function () {

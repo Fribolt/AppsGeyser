@@ -6,7 +6,7 @@
     top: 0;
     width: 100%;
     padding: 0;
-    z-index: 9999;
+    z-index: 999;
     background: #fafafa;
     transform : translate3d(0, 0, 0);
     visibility: visible !important;
@@ -139,11 +139,13 @@
     }
 
     &.desktop {
-      position: absolute;
-      top: 40px;
       display: flex;
       align-items: flex-start;
       justify-content: center;
+      position: absolute;
+      top: 40px;
+      left: 17px;
+      width: 43px;
       height: auto;
       padding: 4px 0;
       border-radius: 4px;

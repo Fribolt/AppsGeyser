@@ -76,6 +76,22 @@ a:hover {
     .btn-create-app:hover {
       background-color: #60A510; }
 
+.loader-container {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  z-index: 1000;
+  overflow: hidden; }
+  .loader-container .loader {
+    width: 300px;
+    height: 70px;
+    margin: auto; }
+
 .header {
   padding: 20px 0;
   box-shadow: 0 1px 0 0 rgba(228, 228, 228, 0.5); }
@@ -85,7 +101,7 @@ a:hover {
       top: 0;
       width: 100%;
       padding: 0;
-      z-index: 9999;
+      z-index: 999;
       background: #fafafa;
       transform: translate3d(0, 0, 0);
       visibility: visible !important; }
@@ -184,11 +200,13 @@ a:hover {
           border: 0;
           overflow-y: scroll; } }
     .header .language-menu.desktop {
-      position: absolute;
-      top: 40px;
       display: flex;
       align-items: flex-start;
       justify-content: center;
+      position: absolute;
+      top: 40px;
+      left: 17px;
+      width: 43px;
       height: auto;
       padding: 4px 0;
       border-radius: 4px;
@@ -435,7 +453,6 @@ section.banner {
     height: 630px;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("../images/banner/banner-bg.png");
     z-index: 3;
     background-size: 100%; }
     @media (max-width: 1200px) {
@@ -468,27 +485,23 @@ section.banner {
       top: 38px;
       right: 70px;
       z-index: 2;
-      background-image: url("../images/banner/banner-bg-2.png");
       background-size: 100%; }
     section.banner .banner-bg-3 {
       position: absolute;
       top: 10px;
       right: 70px;
       z-index: 2;
-      background-image: url("../images/banner/banner-bg-3.png");
       background-size: 100%; }
     section.banner .banner-bg-4 {
       position: absolute;
       top: 39px;
       right: 49px;
-      background-image: url("../images/banner/banner-bg-4.png");
       background-size: 100%;
       z-index: 1; }
     section.banner .banner-bg-5 {
       position: absolute;
       top: 85px;
       right: 89px;
-      background-image: url("../images/banner/banner-bg-5.png");
       background-size: 100%;
       z-index: 2; }
 
@@ -1001,12 +1014,12 @@ section.banner {
     font-weight: 300; }
   .portfolio .carousel {
     display: block; }
-    @media (max-width: 992px) {
+    @media (max-width: 768px) {
       .portfolio .carousel {
         display: none; } }
     .portfolio .carousel.carousel-mobile {
       display: none; }
-      @media (max-width: 992px) {
+      @media (max-width: 768px) {
         .portfolio .carousel.carousel-mobile {
           display: block; } }
   .portfolio .slider {
@@ -1027,20 +1040,11 @@ section.banner {
       .portfolio .slider .slide .template {
         flex: 1; }
         .portfolio .slider .slide .template-bg {
-          height: 510px;
-          background: center no-repeat;
-          background-size: 100%; }
-          @media (max-width: 576px) {
-            .portfolio .slider .slide .template-bg {
-              height: 320px; } }
-          .portfolio .slider .slide .template-bg.website {
-            background-image: url("../images/website.png"); }
-          .portfolio .slider .slide .template-bg.messenger {
-            background-image: url("../images/messenger.png"); }
-          .portfolio .slider .slide .template-bg.browser {
-            background-image: url("../images/browser.png"); }
-          .portfolio .slider .slide .template-bg.media-player {
-            background-image: url("../images/media-player.png"); }
+          padding: 15px; }
+          .portfolio .slider .slide .template-bg img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px; }
         .portfolio .slider .slide .template-title {
           margin-top: 30px;
           font-weight: 600;

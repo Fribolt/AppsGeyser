@@ -10,12 +10,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="vendors/animate/animateCss.css">
     <link rel="stylesheet" href="scss/style.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.13.0/bodymovin.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<div class="loader-container">
+    <div class="loader"></div>
+</div>
 <header class="header fadeIn wow" data-wow-duration="2s">
     <div class="container">
         <div class="row">
@@ -36,19 +40,7 @@
             </div>
             <div class="col-lg-3 col-md-5">
                 <div class="options-menu">
-                    <button id="btn-language" class="btn btn-language">RU
-                        <nav id="language-menu-desktop" class="language-menu mobile-navigation header-navigation desktop">
-                            <div class="navigation-list desktop">
-                                <a href="" class="navigation-item">RU</a>
-                                <a href="" class="navigation-item">EN</a>
-                                <a href="" class="navigation-item">IT</a>
-                                <a href="" class="navigation-item">DN</a>
-                                <a href="" class="navigation-item">BH</a>
-                                <a href="" class="navigation-item">ES</a>
-                                <a href="" class="navigation-item">NR</a>
-                            </div>
-                        </nav>
-                    </button>
+                    <button id="btn-language" class="btn btn-language">RU</button>
                     <button class="btn btn-create-app">Create App</button>
                     <!--<button id="dashboard" class="btn btn-create-app">Dashboard</button>-->
                     <button class="btn btn-login">
@@ -60,6 +52,17 @@
                         <!--<em class="icon"></em>-->
                     <!--</button>-->
                 </div>
+                <nav id="language-menu-desktop" class="language-menu mobile-navigation header-navigation desktop">
+                    <div class="navigation-list desktop">
+                        <a href="" class="navigation-item">RU</a>
+                        <a href="" class="navigation-item">EN</a>
+                        <a href="" class="navigation-item">IT</a>
+                        <a href="" class="navigation-item">DN</a>
+                        <a href="" class="navigation-item">BH</a>
+                        <a href="" class="navigation-item">ES</a>
+                        <a href="" class="navigation-item">NR</a>
+                    </div>
+                </nav>
             </div>
         </div>
     </div>
@@ -96,13 +99,19 @@
             <button class="btn btn-create-app fadeIn wow" data-wow-delay="2s">Create Now for FREE</button>
         </div>
         <div class="banner-container">
-            <div class="banner-bg fadeIn wow" data-wow-delay="2s"></div>
-            <div class="banner-bg banner-bg-rear banner-bg-2 wobble  wow" data-wow-delay="2.5s"></div>
-            <div class="banner-bg banner-bg-rear banner-bg-3 wobble2 wow" data-wow-delay="2.5s"></div>
-            <div class="banner-bg banner-bg-rear banner-bg-4 wobble3  wow" data-wow-delay="2.5s"></div>
-            <div class="banner-bg banner-bg-rear banner-bg-5 wobble4  wow" data-wow-delay="2.5s"></div>
+            <!--<div class="banner-bg fadeIn wow" data-wow-delay="2s"></div>-->
+            <!--<div class="banner-bg banner-bg-rear banner-bg-2 wobble  wow" data-wow-delay="2.5s"></div>-->
+            <!--<div class="banner-bg banner-bg-rear banner-bg-3 wobble2 wow" data-wow-delay="2.5s"></div>-->
+            <!--<div class="banner-bg banner-bg-rear banner-bg-4 wobble3  wow" data-wow-delay="2.5s"></div>-->
+            <!--<div class="banner-bg banner-bg-rear banner-bg-5 wobble4  wow" data-wow-delay="2.5s"></div>-->
+            <img src="images/banner/banner-bg.png" class="banner-bg fadeIn wow" data-wow-delay="2s">
+            <img src="images/banner/banner-bg-2.png" class="banner-bg banner-bg-rear banner-bg-2 wobble  wow" data-wow-delay="2.5s">
+            <img src="images/banner/banner-bg-3.png" class="banner-bg banner-bg-rear banner-bg-3 wobble2 wow" data-wow-delay="2.5s">
+            <img src="images/banner/banner-bg-4.png" class="banner-bg banner-bg-rear banner-bg-4 wobble3  wow" data-wow-delay="2.5s">
+            <img src="images/banner/banner-bg-5.png" class="banner-bg banner-bg-rear banner-bg-5 wobble4  wow" data-wow-delay="2.5s">
         </div>
     </div>
+    <script src="js/loader.js"></script>
 </section>
 <section class="about-us">
     <div class="container">
@@ -385,19 +394,27 @@
                         <div class="carousel-item">
                             <div class="slide no-gutters">
                                 <div class="template col">
-                                    <div class="template-bg website"></div>
+                                    <div class="template-bg">
+                                        <img src="./images/2.png" alt="website">
+                                    </div>
                                     <h4 class="template-title">1Website</h4>
                                 </div>
                                 <div class="template col">
-                                    <div class="template-bg messenger"></div>
+                                    <div class="template-bg">
+                                        <img src="./images/3.png" alt="messenger">
+                                    </div>
                                     <h4 class="template-title">1Messenger</h4>
                                 </div>
                                 <div class="template col">
-                                    <div class="template-bg browser"></div>
+                                    <div class="template-bg">
+                                        <img src="./images/4.png" alt="browser">
+                                    </div>
                                     <h4 class="template-title">1Browser</h4>
                                 </div>
                                 <div class="template col">
-                                    <div class="template-bg media-player"></div>
+                                    <div class="template-bg">
+                                        <img src="./images/5.png" alt="media-player">
+                                    </div>
                                     <h4 class="template-title">1Media Player</h4>
                                 </div>
                             </div>
@@ -405,19 +422,27 @@
                         <div class="carousel-item active">
                             <div class="slide no-gutters">
                                 <div class="template col zoomIn wow" data-wow-delay="1.5s">
-                                    <div class="template-bg website"></div>
+                                    <div class="template-bg ">
+                                        <img src="./images/2.png" alt="website">
+                                    </div>
                                     <h4 class="template-title">2Website</h4>
                                 </div>
                                 <div class="template col zoomIn wow" data-wow-delay="2s">
-                                    <div class="template-bg messenger"></div>
+                                    <div class="template-bg">
+                                        <img src="./images/3.png" alt="messenger">
+                                    </div>
                                     <h4 class="template-title">2Messenger</h4>
                                 </div>
                                 <div class="template col zoomIn wow" data-wow-delay="2.5s">
-                                    <div class="template-bg browser"></div>
+                                    <div class="template-bg">
+                                        <img src="./images/4.png" alt="browser">
+                                    </div>
                                     <h4 class="template-title">2Browser</h4>
                                 </div>
                                 <div class="template col zoomIn wow" data-wow-delay="3s">
-                                    <div class="template-bg media-player"></div>
+                                    <div class="template-bg">
+                                        <img src="./images/5.png" alt="media-player">
+                                    </div>
                                     <h4 class="template-title">2Media Player</h4>
                                 </div>
                             </div>
@@ -425,19 +450,27 @@
                         <div class="carousel-item">
                             <div class="slide no-gutters">
                                 <div class="template col">
-                                    <div class="template-bg website"></div>
+                                    <div class="template-bg ">
+                                        <img src="./images/2.png" alt="website">
+                                    </div>
                                     <h4 class="template-title">3Website</h4>
                                 </div>
                                 <div class="template col">
-                                    <div class="template-bg messenger"></div>
+                                    <div class="template-bg">
+                                        <img src="./images/3.png" alt="messenger">
+                                    </div>
                                     <h4 class="template-title">3Messenger</h4>
                                 </div>
                                 <div class="template col">
-                                    <div class="template-bg browser"></div>
+                                    <div class="template-bg">
+                                        <img src="./images/4.png" alt="browser">
+                                    </div>
                                     <h4 class="template-title">3Browser</h4>
                                 </div>
                                 <div class="template col">
-                                    <div class="template-bg media-player"></div>
+                                    <div class="template-bg">
+                                        <img src="./images/5.png" alt="media-player">
+                                    </div>
                                     <h4 class="template-title">3Media Player</h4>
                                 </div>
                             </div>
@@ -461,23 +494,31 @@
                         <div class="carousel-item">
                             <div class="slide no-gutters">
                                 <div class="template col">
-                                    <div class="template-bg website"></div>
+                                    <div class="template-bg">
+                                        <img src="./images/2.png" alt="website">
+                                    </div>
                                     <h4 class="template-title">1Website</h4>
                                 </div>
                                 <div class="template col">
-                                    <div class="template-bg messenger"></div>
+                                    <div class="template-bg">
+                                        <img src="./images/3.png" alt="messenger">
+                                    </div>
                                     <h4 class="template-title">1Messenger</h4>
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item active">
                             <div class="slide no-gutters">
-                                <div class="template col zoomIn wow" data-wow-delay="1.5s">
-                                    <div class="template-bg website"></div>
+                                <div class="template col">
+                                    <div class="template-bg">
+                                        <img src="./images/2.png" alt="website">
+                                    </div>
                                     <h4 class="template-title">2Website</h4>
                                 </div>
-                                <div class="template col zoomIn wow" data-wow-delay="2s">
-                                    <div class="template-bg messenger"></div>
+                                <div class="template col">
+                                    <div class="template-bg">
+                                        <img src="./images/3.png" alt="messenger">
+                                    </div>
                                     <h4 class="template-title">2Messenger</h4>
                                 </div>
                             </div>
@@ -485,11 +526,15 @@
                         <div class="carousel-item">
                             <div class="slide no-gutters">
                                 <div class="template col">
-                                    <div class="template-bg website"></div>
+                                    <div class="template-bg">
+                                        <img src="./images/2.png" alt="website">
+                                    </div>
                                     <h4 class="template-title">3Website</h4>
                                 </div>
                                 <div class="template col">
-                                    <div class="template-bg messenger"></div>
+                                    <div class="template-bg">
+                                        <img src="./images/3.png" alt="messenger">
+                                    </div>
                                     <h4 class="template-title">3Messenger</h4>
                                 </div>
                             </div>
@@ -497,35 +542,47 @@
                         <div class="carousel-item">
                             <div class="slide no-gutters">
                                 <div class="template col">
-                                    <div class="template-bg browser"></div>
-                                    <h4 class="template-title">4Browser</h4>
+                                    <div class="template-bg">
+                                        <img src="./images/2.png" alt="website">
+                                    </div>
+                                    <h4 class="template-title">4Website</h4>
                                 </div>
                                 <div class="template col">
-                                    <div class="template-bg media-player"></div>
-                                    <h4 class="template-title">4Media Player</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="slide no-gutters">
-                                <div class="template col">
-                                    <div class="template-bg browser"></div>
-                                    <h4 class="template-title">5Browser</h4>
-                                </div>
-                                <div class="template col">
-                                    <div class="template-bg media-player"></div>
-                                    <h4 class="template-title">5Media Player</h4>
+                                    <div class="template-bg">
+                                        <img src="./images/3.png" alt="messenger">
+                                    </div>
+                                    <h4 class="template-title">4Messenger</h4>
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="slide no-gutters">
                                 <div class="template col">
-                                    <div class="template-bg website"></div>
+                                    <div class="template-bg">
+                                        <img src="./images/2.png" alt="website">
+                                    </div>
+                                    <h4 class="template-title">5Website</h4>
+                                </div>
+                                <div class="template col">
+                                    <div class="template-bg">
+                                        <img src="./images/3.png" alt="messenger">
+                                    </div>
+                                    <h4 class="template-title">5Messenger</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="slide no-gutters">
+                                <div class="template col">
+                                    <div class="template-bg">
+                                        <img src="./images/2.png" alt="website">
+                                    </div>
                                     <h4 class="template-title">6Website</h4>
                                 </div>
                                 <div class="template col">
-                                    <div class="template-bg messenger"></div>
+                                    <div class="template-bg">
+                                        <img src="./images/3.png" alt="messenger">
+                                    </div>
                                     <h4 class="template-title">6Messenger</h4>
                                 </div>
                             </div>
@@ -617,12 +674,10 @@
     </div>
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
 <script src="https://www.appsgeyser.com/js/datamaps.world.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.13.0/bodymovin.js" type="text/javascript"></script>
 <script src="js/comments-slider.js"></script>
 <script src="js/map.js"></script>
 <script src="js/animation.js"></script>
@@ -651,7 +706,7 @@
     closeBtn.addEventListener('click',  function () {
         toggleMenu(languageNav);
     });
-
 </script>
+
 </body>
 </html>

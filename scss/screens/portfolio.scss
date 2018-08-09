@@ -12,13 +12,13 @@
   }
   .carousel {
     display: block;
-    @media (max-width: $md) {
+    @media (max-width: $sm) {
       display: none;
     }
 
     &.carousel-mobile {
       display: none;
-      @media (max-width: $md) {
+      @media (max-width: $sm) {
         display: block;
       }
     }
@@ -56,24 +56,12 @@
         flex: 1;
 
         &-bg {
-          height: 510px;
-          background: center no-repeat;
-          background-size: 100%;
-          @media (max-width: $xs) {
-            height: 320px;
-          }
+          padding: 15px;
 
-          &.website {
-            background-image: url("../images/website.png");
-          }
-          &.messenger {
-            background-image: url("../images/messenger.png");
-          }
-          &.browser {
-            background-image: url("../images/browser.png");
-          }
-          &.media-player {
-            background-image: url("../images/media-player.png");
+          img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
           }
         }
 
