@@ -40,7 +40,7 @@ a:hover {
 
 .btn {
   position: relative;
-  z-index: 999;
+  z-index: 4;
   background-color: #99cc33;
   box-shadow: 0 10px 20px 0 rgba(96, 165, 16, 0.42); }
   .btn:focus {
@@ -91,6 +91,9 @@ a:hover {
     width: 300px;
     height: 70px;
     margin: auto; }
+    @media (max-width: 768px) {
+      .loader-container .loader {
+        padding-left: 20px; } }
 
 .header {
   padding: 20px 0;
@@ -101,7 +104,7 @@ a:hover {
       top: 0;
       width: 100%;
       padding: 0;
-      z-index: 999;
+      z-index: 5;
       background: #fafafa;
       transform: translate3d(0, 0, 0);
       visibility: visible !important; }
@@ -187,7 +190,7 @@ a:hover {
   .header .language-menu {
     height: 100vh;
     top: 0;
-    z-index: 999; }
+    z-index: 6; }
     .header .language-menu.mobile {
       display: none; }
       @media (max-width: 992px) {
@@ -1044,7 +1047,8 @@ section.banner {
           .portfolio .slider .slide .template-bg img {
             width: 100%;
             height: auto;
-            border-radius: 5px; }
+            border-radius: 10px;
+            box-shadow: 0 0 14px 0 rgba(180, 180, 180, 0.7); }
         .portfolio .slider .slide .template-title {
           margin-top: 30px;
           font-weight: 600;

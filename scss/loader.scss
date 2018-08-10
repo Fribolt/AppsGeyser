@@ -14,5 +14,8 @@
     width: 300px;
     height: 70px;
     margin: auto;
+    @media (max-width: $sm) {
+      padding-left: 20px;
+    }
   }
 }
